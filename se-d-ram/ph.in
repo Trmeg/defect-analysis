@@ -1,0 +1,10 @@
+&INPUTPH
+  tr2_ph = 1.0d-14,
+  outdir = './out/',
+  prefix = 'v',
+  fildyn = 'om.dmat',
+  lraman = .true.,
+  epsil  = .true.,
+  recover = .true.
+/
+0.0 0.0 0.0
