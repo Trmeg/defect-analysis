@@ -1,7 +1,7 @@
 &INPUTPH
   tr2_ph = 1.0d-14,
   outdir = './out/',
-  prefix = 'v',
+  prefix = 'ga',
   fildyn = 'om.dmat',
   lraman = .true.,
   epsil  = .true.,
