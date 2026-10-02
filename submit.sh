@@ -5,9 +5,6 @@
 #PBS -l walltime=03:00:00
 #PBS -o job.out
 #PBS -e job.err
-#PBS -P ioe.che.rousan.1
-#PBS -m bea
-#PBS -M che252200@iitd.ac.in
 
 cd $PBS_O_WORKDIR
 
