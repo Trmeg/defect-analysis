@@ -1,0 +1,2324 @@
+Attaching 4347 to 996112.pbshpc
+Attaching 8415 to 996112.pbshpc
+Attaching 30728 to 996112.pbshpc
+
+     Program PHONON v.7.3.1 starts on 24Aug2026 at 15:28: 0 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on      64 processor cores
+     Number of MPI processes:                64
+     Threads/MPI process:                     1
+
+     MPI processes distributed on     4 nodes
+     48785 MiB available memory on the printing compute node when the environment starts
+ 
+     Reading input from ph.in
+      Title line not specified: using 'default'.
+
+     Reading xml data from directory:
+
+     ./out/v.save/
+ 
+     K-points division:     npool     =       2
+     R & G space division:  proc/nbgrp/npool/nimage =      32
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     one sub-group per band group will be used
+     scalapack distributed-memory algorithm (size of sub-group:  2*  2 procs)
+
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PZ
+                           (   1   1   0   0   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         254     126     34                27112     9576    1358
+     Max         255     127     35                27118     9585    1367
+     Sum        8129    4061   1109               867655   306621   43583
+ 
+     Using Slab Decomposition
+ 
+     Reading collected, re-writing distributed wavefunctions in ./out/
+        1 /   1 q-points for this run, from  1 to  1:
+       N       xq(1)         xq(2)         xq(3) 
+       1   0.000000000   0.000000000   0.000000000
+ 
+
+     Calculation of q =    0.0000000   0.0000000   0.0000000
+
+     Restart in Phonon calculation
+
+     default                                                                    
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =      14.6148  a.u.
+     unit-cell volume          =    4887.0940 (a.u.)^3
+     number of atoms/cell      =           40
+     number of atomic types    =            3
+     kinetic-energy cut-off    =      60.0000  Ry
+     charge density cut-off    =     480.0000  Ry
+     convergence threshold     =      1.0E-14
+     beta                      =       0.7000
+     number of iterations used =            4
+     Exchange-correlation= PZ
+                           (   1   1   0   0   0   0   0)
+
+
+     celldm(1)=   14.61480  celldm(2)=    0.00000  celldm(3)=    0.00000
+     celldm(4)=    0.00000  celldm(5)=    0.00000  celldm(6)=    0.00000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  1.0000  0.0000  0.0000 )  
+               a(2) = (  0.0000  1.0000  0.0000 )  
+               a(3) = (  0.0000  0.0000  1.5656 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.0000  0.0000  0.0000 )  
+               b(2) = (  0.0000  1.0000  0.0000 )  
+               b(3) = (  0.0000  0.0000  0.6387 )  
+
+
+     Atoms inside the unit cell: 
+
+     Cartesian axes
+
+     site n.  atom      mass           positions (alat units)
+        1  Bi    208.9804   tau(    1) = (    0.00000    0.00000    0.55561  )
+        2  Bi    208.9804   tau(    2) = (    0.00000    0.00000    1.00996  )
+        3  Bi    208.9804   tau(    3) = (    0.25000    0.25000    1.33840  )
+        4  Bi    208.9804   tau(    4) = (    0.25000    0.25000    0.22717  )
+        5  Bi    208.9804   tau(    5) = (    0.00000    0.50000    0.55561  )
+        6  Bi    208.9804   tau(    6) = (    0.00000    0.50000    1.00996  )
+        7  Bi    208.9804   tau(    7) = (    0.50000    0.00000    0.55561  )
+        8  Bi    208.9804   tau(    8) = (    0.50000    0.00000    1.00996  )
+        9  Bi    208.9804   tau(    9) = (    0.25000    0.75000    1.33840  )
+       10  Bi    208.9804   tau(   10) = (    0.25000    0.75000    0.22717  )
+       11  Bi    208.9804   tau(   11) = (    0.75000    0.25000    1.33840  )
+       12  Bi    208.9804   tau(   12) = (    0.75000    0.25000    0.22717  )
+       13  Bi    208.9804   tau(   13) = (    0.50000    0.50000    0.55561  )
+       14  Bi    208.9804   tau(   14) = (    0.50000    0.50000    1.00996  )
+       15  Bi    208.9804   tau(   15) = (    0.75000    0.75000    1.33840  )
+       16  Bi    208.9804   tau(   16) = (    0.75000    0.75000    0.22717  )
+       17  Se     78.9600   tau(   17) = (    0.00000    0.00000    0.00000  )
+       18  Se     78.9600   tau(   18) = (    0.25000    0.25000    0.78278  )
+       19  Se     78.9600   tau(   19) = (    0.00000    0.50000    0.00000  )
+       20  Se     78.9600   tau(   20) = (    0.50000    0.00000    0.00000  )
+       21  Se     78.9600   tau(   21) = (    0.25000    0.75000    0.78278  )
+       22  Se     78.9600   tau(   22) = (    0.75000    0.25000    0.78278  )
+       23  Se     78.9600   tau(   23) = (    0.50000    0.50000    0.00000  )
+       24  Se     78.9600   tau(   24) = (    0.75000    0.75000    0.78278  )
+       25  O      15.9994   tau(   25) = (    0.00000    0.25000    0.39139  )
+       26  O      15.9994   tau(   26) = (    0.00000    0.75000    1.17418  )
+       27  O      15.9994   tau(   27) = (    0.00000    0.75000    0.39139  )
+       28  O      15.9994   tau(   28) = (    0.00000    0.25000    1.17418  )
+       29  O      15.9994   tau(   29) = (    0.75000    0.00000    0.39139  )
+       30  O      15.9994   tau(   30) = (    0.25000    0.00000    1.17418  )
+       31  O      15.9994   tau(   31) = (    0.25000    0.00000    0.39139  )
+       32  O      15.9994   tau(   32) = (    0.75000    0.00000    1.17418  )
+       33  O      15.9994   tau(   33) = (    0.25000    0.50000    1.17418  )
+       34  O      15.9994   tau(   34) = (    0.25000    0.50000    0.39139  )
+       35  O      15.9994   tau(   35) = (    0.50000    0.25000    0.39139  )
+       36  O      15.9994   tau(   36) = (    0.50000    0.25000    1.17418  )
+       37  O      15.9994   tau(   37) = (    0.50000    0.75000    0.39139  )
+       38  O      15.9994   tau(   38) = (    0.50000    0.75000    1.17418  )
+       39  O      15.9994   tau(   39) = (    0.75000    0.50000    1.17418  )
+       40  O      15.9994   tau(   40) = (    0.75000    0.50000    0.39139  )
+
+     Computing dynamical matrix for 
+                    q = (   0.0000000   0.0000000   0.0000000 )
+ 
+     17 Sym.Ops. (with q -> -q+G )
+
+
+     G cutoff = 2596.9707  (  27114 G-vectors)     FFT grid: (108,108,160)
+     G cutoff = 1298.4854  (   9585 G-vectors)  smooth grid: ( 75, 75,120)
+     number of k points=    40
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   0.0092593
+        k(    2) = (   0.0000000   0.0000000   0.1064575), wk =   0.0185185
+        k(    3) = (   0.0000000   0.0000000   0.2129151), wk =   0.0185185
+        k(    4) = (   0.0000000   0.0000000  -0.3193726), wk =   0.0092593
+        k(    5) = (   0.0000000   0.1666667   0.0000000), wk =   0.0370370
+        k(    6) = (   0.0000000   0.1666667   0.1064575), wk =   0.0740741
+        k(    7) = (   0.0000000   0.1666667   0.2129151), wk =   0.0740741
+        k(    8) = (   0.0000000   0.1666667  -0.3193726), wk =   0.0370370
+        k(    9) = (   0.0000000   0.3333333   0.0000000), wk =   0.0370370
+        k(   10) = (   0.0000000   0.3333333   0.1064575), wk =   0.0740741
+        k(   11) = (   0.0000000   0.3333333   0.2129151), wk =   0.0740741
+        k(   12) = (   0.0000000   0.3333333  -0.3193726), wk =   0.0370370
+        k(   13) = (   0.0000000  -0.5000000   0.0000000), wk =   0.0185185
+        k(   14) = (   0.0000000  -0.5000000   0.1064575), wk =   0.0370370
+        k(   15) = (   0.0000000  -0.5000000   0.2129151), wk =   0.0370370
+        k(   16) = (   0.0000000  -0.5000000  -0.3193726), wk =   0.0185185
+        k(   17) = (   0.1666667   0.1666667   0.0000000), wk =   0.0370370
+        k(   18) = (   0.1666667   0.1666667   0.1064575), wk =   0.0740741
+        k(   19) = (   0.1666667   0.1666667   0.2129151), wk =   0.0740741
+        k(   20) = (   0.1666667   0.1666667  -0.3193726), wk =   0.0370370
+        k(   21) = (   0.1666667   0.3333333   0.0000000), wk =   0.0740741
+        k(   22) = (   0.1666667   0.3333333   0.1064575), wk =   0.1481481
+        k(   23) = (   0.1666667   0.3333333   0.2129151), wk =   0.1481481
+        k(   24) = (   0.1666667   0.3333333  -0.3193726), wk =   0.0740741
+        k(   25) = (   0.1666667  -0.5000000   0.0000000), wk =   0.0370370
+        k(   26) = (   0.1666667  -0.5000000   0.1064575), wk =   0.0740741
+        k(   27) = (   0.1666667  -0.5000000   0.2129151), wk =   0.0740741
+        k(   28) = (   0.1666667  -0.5000000  -0.3193726), wk =   0.0370370
+        k(   29) = (   0.3333333   0.3333333   0.0000000), wk =   0.0370370
+        k(   30) = (   0.3333333   0.3333333   0.1064575), wk =   0.0740741
+        k(   31) = (   0.3333333   0.3333333   0.2129151), wk =   0.0740741
+        k(   32) = (   0.3333333   0.3333333  -0.3193726), wk =   0.0370370
+        k(   33) = (   0.3333333  -0.5000000   0.0000000), wk =   0.0370370
+        k(   34) = (   0.3333333  -0.5000000   0.1064575), wk =   0.0740741
+        k(   35) = (   0.3333333  -0.5000000   0.2129151), wk =   0.0740741
+        k(   36) = (   0.3333333  -0.5000000  -0.3193726), wk =   0.0370370
+        k(   37) = (  -0.5000000  -0.5000000   0.0000000), wk =   0.0092593
+        k(   38) = (  -0.5000000  -0.5000000   0.1064575), wk =   0.0185185
+        k(   39) = (  -0.5000000  -0.5000000   0.2129151), wk =   0.0185185
+        k(   40) = (  -0.5000000  -0.5000000  -0.3193726), wk =   0.0092593
+
+     PseudoPot. # 1 for Bi read from file:
+     ./Bi.upf
+     MD5 check sum: 6872f064adb6bc5e400c0fc6d475decc
+     Pseudo is Norm-conserving + core correction, Zval = 15.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of 1562 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+
+     PseudoPot. # 2 for O  read from file:
+     ./O.upf
+     MD5 check sum: a1969bbd51a79f57ce766e937222aee4
+     Pseudo is Norm-conserving + core correction, Zval =  6.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of  936 points,  5 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+
+     PseudoPot. # 3 for Se read from file:
+     ./Se.upf
+     MD5 check sum: 666d3fce17080e2232e5bf8193ff52c1
+     Pseudo is Norm-conserving + core correction, Zval = 16.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of 1214 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+
+     Mode symmetry, D_4h(4/mmm) point group:
+
+
+     Electric field:
+     Dielectric constant
+     Born effective charges as d Force / d E
+     Raman tensor
+
+
+     Atomic displacements:
+     There are   87 irreducible representations
+
+     Representation     1      1 modes -  Done
+
+     Representation     2      1 modes -  Done
+
+     Representation     3      1 modes -  Done
+
+     Representation     4      1 modes -  Done
+
+     Representation     5      1 modes -  Done
+
+     Representation     6      1 modes -  Done
+
+     Representation     7      1 modes -  Done
+
+     Representation     8      1 modes -  Done
+
+     Representation     9      1 modes -  Done
+
+     Representation    10      1 modes -  Done
+
+     Representation    11      1 modes -  Done
+
+     Representation    12      1 modes -  Done
+
+     Representation    13      1 modes -  Done
+
+     Representation    14      1 modes -  Done
+
+     Representation    15      1 modes -  Done
+
+     Representation    16      1 modes -  Done
+
+     Representation    17      1 modes -  Done
+
+     Representation    18      1 modes -  Done
+
+     Representation    19      1 modes -  Done
+
+     Representation    20      1 modes -  Done
+
+     Representation    21      1 modes -  Done
+
+     Representation    22      1 modes -  Done
+
+     Representation    23      1 modes -  Done
+
+     Representation    24      1 modes -  Done
+
+     Representation    25      1 modes -  Done
+
+     Representation    26      1 modes -  Done
+
+     Representation    27      2 modes -  Done
+
+     Representation    28      2 modes -  Done
+
+     Representation    29      2 modes -  Done
+
+     Representation    30      2 modes -  Done
+
+     Representation    31      2 modes -  Done
+
+     Representation    32      2 modes -  Done
+
+     Representation    33      2 modes -  Done
+
+     Representation    34      2 modes -  Done
+
+     Representation    35      2 modes -  Done
+
+     Representation    36      2 modes -  Done
+
+     Representation    37      2 modes -  Done
+
+     Representation    38      2 modes -  Done
+
+     Representation    39      2 modes -  Done
+
+     Representation    40      2 modes -  Done
+
+     Representation    41      1 modes -  Done
+
+     Representation    42      1 modes -  Done
+
+     Representation    43      1 modes -  Done
+
+     Representation    44      1 modes -  Done
+
+     Representation    45      1 modes -  Done
+
+     Representation    46      1 modes -  Done
+
+     Representation    47      1 modes -  Done
+
+     Representation    48      1 modes -  Done
+
+     Representation    49      1 modes -  Done
+
+     Representation    50      1 modes -  Done
+
+     Representation    51      1 modes -  Done
+
+     Representation    52      1 modes -  Done
+
+     Representation    53      1 modes -  Done
+
+     Representation    54      1 modes -  Done
+
+     Representation    55      1 modes -  Done
+
+     Representation    56      1 modes -  Done
+
+     Representation    57      1 modes -  Done
+
+     Representation    58      1 modes -  Done
+
+     Representation    59      1 modes -  Done
+
+     Representation    60      1 modes -  Done
+
+     Representation    61      1 modes -  Done
+
+     Representation    62      1 modes -  Done
+
+     Representation    63      1 modes -  Done
+
+     Representation    64      1 modes -  Done
+
+     Representation    65      1 modes -  Done
+
+     Representation    66      1 modes -  Done
+
+     Representation    67      1 modes -  Done
+
+     Representation    68      1 modes -  Done
+
+     Representation    69      2 modes -  Done
+
+     Representation    70      2 modes -  Done
+
+     Representation    71      2 modes -  Done
+
+     Representation    72      2 modes -  Done
+
+     Representation    73      2 modes -  Done
+
+     Representation    74      2 modes -  Done
+
+     Representation    75      2 modes -  Done
+
+     Representation    76      2 modes -  To be done
+
+     Representation    77      2 modes -  To be done
+
+     Representation    78      2 modes -  To be done
+
+     Representation    79      2 modes -  To be done
+
+     Representation    80      2 modes -  To be done
+
+     Representation    81      2 modes -  To be done
+
+     Representation    82      2 modes -  To be done
+
+     Representation    83      2 modes -  To be done
+
+     Representation    84      2 modes -  To be done
+
+     Representation    85      2 modes -  To be done
+
+     Representation    86      2 modes -  To be done
+
+     Representation    87      2 modes -  To be done
+
+
+     PHONON       :     10.73s CPU     22.29s WALL
+
+
+          Dielectric constant in cartesian axis 
+
+          (      15.058049375       0.000000000       0.000000000 )
+          (       0.000000000      15.058049375       0.000000000 )
+          (       0.000000000       0.000000000      10.985370746 )
+
+          Effective charges (d Force / dE) in cartesian axis without acoustic sum rule applied (asr)
+
+           atom    1  Bi    Mean Z*:        5.99309
+      Ex  (        6.24409        0.00000        0.00000 )
+      Ey  (        0.00000        6.24409        0.00000 )
+      Ez  (        0.00000        0.00000        5.49110 )
+           atom    2  Bi    Mean Z*:        5.99309
+      Ex  (        6.24409        0.00000        0.00000 )
+      Ey  (        0.00000        6.24409        0.00000 )
+      Ez  (        0.00000        0.00000        5.49110 )
+           atom    3  Bi    Mean Z*:        5.99080
+      Ex  (        6.24069       -0.00000       -0.00093 )
+      Ey  (       -0.00000        6.24069       -0.00093 )
+      Ez  (        0.00018        0.00018        5.49102 )
+           atom    4  Bi    Mean Z*:        5.99080
+      Ex  (        6.24069       -0.00000        0.00093 )
+      Ey  (       -0.00000        6.24069        0.00093 )
+      Ez  (       -0.00018       -0.00018        5.49102 )
+           atom    5  Bi    Mean Z*:        5.99083
+      Ex  (        6.24407        0.00000        0.00000 )
+      Ey  (        0.00000        6.23712        0.00000 )
+      Ez  (        0.00000        0.00000        5.49129 )
+           atom    6  Bi    Mean Z*:        5.99083
+      Ex  (        6.24407        0.00000        0.00000 )
+      Ey  (        0.00000        6.23712        0.00000 )
+      Ez  (        0.00000        0.00000        5.49129 )
+           atom    7  Bi    Mean Z*:        5.99083
+      Ex  (        6.23712        0.00000        0.00000 )
+      Ey  (        0.00000        6.24407        0.00000 )
+      Ez  (        0.00000        0.00000        5.49129 )
+           atom    8  Bi    Mean Z*:        5.99083
+      Ex  (        6.23712        0.00000        0.00000 )
+      Ey  (        0.00000        6.24407        0.00000 )
+      Ez  (        0.00000        0.00000        5.49129 )
+           atom    9  Bi    Mean Z*:        5.99080
+      Ex  (        6.24069        0.00000       -0.00093 )
+      Ey  (        0.00000        6.24069        0.00093 )
+      Ez  (        0.00018       -0.00018        5.49102 )
+           atom   10  Bi    Mean Z*:        5.99080
+      Ex  (        6.24069        0.00000        0.00093 )
+      Ey  (        0.00000        6.24069       -0.00093 )
+      Ez  (       -0.00018        0.00018        5.49102 )
+           atom   11  Bi    Mean Z*:        5.99080
+      Ex  (        6.24069        0.00000        0.00093 )
+      Ey  (        0.00000        6.24069       -0.00093 )
+      Ez  (       -0.00018        0.00018        5.49102 )
+           atom   12  Bi    Mean Z*:        5.99080
+      Ex  (        6.24069        0.00000       -0.00093 )
+      Ey  (        0.00000        6.24069        0.00093 )
+      Ez  (        0.00018       -0.00018        5.49102 )
+           atom   13  Bi    Mean Z*:        5.98857
+      Ex  (        6.23712        0.00000        0.00000 )
+      Ey  (        0.00000        6.23712        0.00000 )
+      Ez  (        0.00000        0.00000        5.49147 )
+           atom   14  Bi    Mean Z*:        5.98857
+      Ex  (        6.23712        0.00000        0.00000 )
+      Ey  (        0.00000        6.23712        0.00000 )
+      Ez  (        0.00000        0.00000        5.49147 )
+           atom   15  Bi    Mean Z*:        5.99080
+      Ex  (        6.24069       -0.00000        0.00093 )
+      Ey  (       -0.00000        6.24069        0.00093 )
+      Ez  (       -0.00018       -0.00018        5.49102 )
+           atom   16  Bi    Mean Z*:        5.99080
+      Ex  (        6.24069       -0.00000       -0.00093 )
+      Ey  (       -0.00000        6.24069       -0.00093 )
+      Ez  (        0.00018        0.00018        5.49102 )
+           atom   17  Se    Mean Z*:       -3.89561
+      Ex  (       -4.32807        0.00000        0.00000 )
+      Ey  (        0.00000       -4.32807        0.00000 )
+      Ez  (        0.00000        0.00000       -3.03067 )
+           atom   18  Se    Mean Z*:       -3.89649
+      Ex  (       -4.32941       -0.00000        0.00000 )
+      Ey  (       -0.00000       -4.32941        0.00000 )
+      Ez  (        0.00000        0.00000       -3.03064 )
+           atom   19  Se    Mean Z*:       -3.89696
+      Ex  (       -4.32820        0.00000        0.00000 )
+      Ey  (        0.00000       -4.33167        0.00000 )
+      Ez  (        0.00000        0.00000       -3.03101 )
+           atom   20  Se    Mean Z*:       -3.89696
+      Ex  (       -4.33167        0.00000        0.00000 )
+      Ey  (        0.00000       -4.32820        0.00000 )
+      Ez  (        0.00000        0.00000       -3.03101 )
+           atom   21  Se    Mean Z*:       -3.89649
+      Ex  (       -4.32941        0.00000        0.00000 )
+      Ey  (        0.00000       -4.32941        0.00000 )
+      Ez  (        0.00000        0.00000       -3.03064 )
+           atom   22  Se    Mean Z*:       -3.89649
+      Ex  (       -4.32941        0.00000        0.00000 )
+      Ey  (        0.00000       -4.32941        0.00000 )
+      Ez  (        0.00000       -0.00000       -3.03064 )
+           atom   23  Se    Mean Z*:       -3.89831
+      Ex  (       -4.33179        0.00000        0.00000 )
+      Ey  (        0.00000       -4.33179        0.00000 )
+      Ez  (        0.00000        0.00000       -3.03135 )
+           atom   24  Se    Mean Z*:       -3.89649
+      Ex  (       -4.32941       -0.00000        0.00000 )
+      Ey  (       -0.00000       -4.32941        0.00000 )
+      Ez  (        0.00000       -0.00000       -3.03064 )
+           atom   25  O     Mean Z*:       -3.99923
+      Ex  (       -4.03356        0.00000        0.00000 )
+      Ey  (       -0.00000       -4.03452        0.00020 )
+      Ez  (        0.00000       -0.00008       -3.92961 )
+           atom   26  O     Mean Z*:       -3.99923
+      Ex  (       -4.03356        0.00000        0.00000 )
+      Ey  (        0.00000       -4.03452        0.00020 )
+      Ez  (        0.00000       -0.00008       -3.92961 )
+           atom   27  O     Mean Z*:       -3.99923
+      Ex  (       -4.03356        0.00000        0.00000 )
+      Ey  (       -0.00000       -4.03452       -0.00020 )
+      Ez  (        0.00000        0.00008       -3.92961 )
+           atom   28  O     Mean Z*:       -3.99923
+      Ex  (       -4.03356        0.00000        0.00000 )
+      Ey  (        0.00000       -4.03452       -0.00020 )
+      Ez  (        0.00000        0.00008       -3.92961 )
+           atom   29  O     Mean Z*:       -3.99923
+      Ex  (       -4.03452        0.00000       -0.00020 )
+      Ey  (       -0.00000       -4.03356       -0.00000 )
+      Ez  (        0.00008        0.00000       -3.92961 )
+           atom   30  O     Mean Z*:       -3.99923
+      Ex  (       -4.03452        0.00000       -0.00020 )
+      Ey  (        0.00000       -4.03356        0.00000 )
+      Ez  (        0.00008        0.00000       -3.92961 )
+           atom   31  O     Mean Z*:       -3.99923
+      Ex  (       -4.03452        0.00000        0.00020 )
+      Ey  (       -0.00000       -4.03356        0.00000 )
+      Ez  (       -0.00008        0.00000       -3.92961 )
+           atom   32  O     Mean Z*:       -3.99923
+      Ex  (       -4.03452        0.00000        0.00020 )
+      Ey  (        0.00000       -4.03356       -0.00000 )
+      Ez  (       -0.00008        0.00000       -3.92961 )
+           atom   33  O     Mean Z*:       -4.00000
+      Ex  (       -4.03459        0.00000       -0.00020 )
+      Ey  (       -0.00000       -4.03578        0.00000 )
+      Ez  (        0.00008        0.00000       -3.92963 )
+           atom   34  O     Mean Z*:       -4.00000
+      Ex  (       -4.03459       -0.00000        0.00020 )
+      Ey  (       -0.00000       -4.03578        0.00000 )
+      Ez  (       -0.00008        0.00000       -3.92963 )
+           atom   35  O     Mean Z*:       -4.00000
+      Ex  (       -4.03578        0.00000        0.00000 )
+      Ey  (        0.00000       -4.03459        0.00020 )
+      Ez  (        0.00000       -0.00008       -3.92963 )
+           atom   36  O     Mean Z*:       -4.00000
+      Ex  (       -4.03578        0.00000        0.00000 )
+      Ey  (       -0.00000       -4.03459       -0.00020 )
+      Ez  (        0.00000        0.00008       -3.92963 )
+           atom   37  O     Mean Z*:       -4.00000
+      Ex  (       -4.03578        0.00000        0.00000 )
+      Ey  (        0.00000       -4.03459       -0.00020 )
+      Ez  (        0.00000        0.00008       -3.92963 )
+           atom   38  O     Mean Z*:       -4.00000
+      Ex  (       -4.03578        0.00000        0.00000 )
+      Ey  (       -0.00000       -4.03459        0.00020 )
+      Ez  (        0.00000       -0.00008       -3.92963 )
+           atom   39  O     Mean Z*:       -4.00000
+      Ex  (       -4.03459        0.00000        0.00020 )
+      Ey  (       -0.00000       -4.03578       -0.00000 )
+      Ez  (       -0.00008        0.00000       -3.92963 )
+           atom   40  O     Mean Z*:       -4.00000
+      Ex  (       -4.03459       -0.00000       -0.00020 )
+      Ey  (       -0.00000       -4.03578       -0.00000 )
+      Ez  (        0.00008        0.00000       -3.92963 )
+
+          Effective charges Sum: Mean:        0.68545
+              0.65920       -0.00000        0.00000
+              0.00000        0.65920        0.00000
+             -0.00000       -0.00000        0.73796
+
+          Effective charges (d Force / dE) in cartesian axis with asr applied: 
+           atom    1  Bi    Mean Z*:        5.97596
+      E*x (        6.22761       -0.00000        0.00000 )
+      E*y (        0.00000        6.22761        0.00000 )
+      E*z (       -0.00000       -0.00000        5.47265 )
+           atom    2  Bi    Mean Z*:        5.97596
+      E*x (        6.22761       -0.00000        0.00000 )
+      E*y (        0.00000        6.22761        0.00000 )
+      E*z (       -0.00000       -0.00000        5.47265 )
+           atom    3  Bi    Mean Z*:        5.97367
+      E*x (        6.22421       -0.00000       -0.00093 )
+      E*y (       -0.00000        6.22421       -0.00093 )
+      E*z (        0.00018        0.00018        5.47257 )
+           atom    4  Bi    Mean Z*:        5.97367
+      E*x (        6.22421       -0.00000        0.00093 )
+      E*y (       -0.00000        6.22421        0.00093 )
+      E*z (       -0.00018       -0.00018        5.47257 )
+           atom    5  Bi    Mean Z*:        5.97369
+      E*x (        6.22759       -0.00000        0.00000 )
+      E*y (        0.00000        6.22064        0.00000 )
+      E*z (       -0.00000       -0.00000        5.47284 )
+           atom    6  Bi    Mean Z*:        5.97369
+      E*x (        6.22759       -0.00000        0.00000 )
+      E*y (        0.00000        6.22064        0.00000 )
+      E*z (       -0.00000       -0.00000        5.47284 )
+           atom    7  Bi    Mean Z*:        5.97369
+      E*x (        6.22064       -0.00000        0.00000 )
+      E*y (        0.00000        6.22759        0.00000 )
+      E*z (       -0.00000       -0.00000        5.47284 )
+           atom    8  Bi    Mean Z*:        5.97369
+      E*x (        6.22064       -0.00000        0.00000 )
+      E*y (        0.00000        6.22759        0.00000 )
+      E*z (       -0.00000       -0.00000        5.47284 )
+           atom    9  Bi    Mean Z*:        5.97367
+      E*x (        6.22421        0.00000       -0.00093 )
+      E*y (        0.00000        6.22421        0.00093 )
+      E*z (        0.00018       -0.00018        5.47257 )
+           atom   10  Bi    Mean Z*:        5.97367
+      E*x (        6.22421        0.00000        0.00093 )
+      E*y (        0.00000        6.22421       -0.00093 )
+      E*z (       -0.00018        0.00018        5.47257 )
+           atom   11  Bi    Mean Z*:        5.97367
+      E*x (        6.22421        0.00000        0.00093 )
+      E*y (        0.00000        6.22421       -0.00093 )
+      E*z (       -0.00018        0.00018        5.47257 )
+           atom   12  Bi    Mean Z*:        5.97367
+      E*x (        6.22421        0.00000       -0.00093 )
+      E*y (        0.00000        6.22421        0.00093 )
+      E*z (        0.00018       -0.00018        5.47257 )
+           atom   13  Bi    Mean Z*:        5.97144
+      E*x (        6.22064       -0.00000        0.00000 )
+      E*y (        0.00000        6.22064        0.00000 )
+      E*z (       -0.00000       -0.00000        5.47302 )
+           atom   14  Bi    Mean Z*:        5.97144
+      E*x (        6.22064       -0.00000        0.00000 )
+      E*y (        0.00000        6.22064        0.00000 )
+      E*z (       -0.00000       -0.00000        5.47302 )
+           atom   15  Bi    Mean Z*:        5.97367
+      E*x (        6.22421       -0.00000        0.00093 )
+      E*y (       -0.00000        6.22421        0.00093 )
+      E*z (       -0.00018       -0.00018        5.47257 )
+           atom   16  Bi    Mean Z*:        5.97367
+      E*x (        6.22421       -0.00000       -0.00093 )
+      E*y (       -0.00000        6.22421       -0.00093 )
+      E*z (        0.00018        0.00018        5.47257 )
+           atom   17  Se    Mean Z*:       -3.91274
+      E*x (       -4.34455       -0.00000        0.00000 )
+      E*y (        0.00000       -4.34455        0.00000 )
+      E*z (       -0.00000       -0.00000       -3.04912 )
+           atom   18  Se    Mean Z*:       -3.91363
+      E*x (       -4.34589       -0.00000        0.00000 )
+      E*y (       -0.00000       -4.34589        0.00000 )
+      E*z (       -0.00000        0.00000       -3.04909 )
+           atom   19  Se    Mean Z*:       -3.91409
+      E*x (       -4.34468       -0.00000        0.00000 )
+      E*y (        0.00000       -4.34815        0.00000 )
+      E*z (       -0.00000       -0.00000       -3.04946 )
+           atom   20  Se    Mean Z*:       -3.91409
+      E*x (       -4.34815       -0.00000        0.00000 )
+      E*y (        0.00000       -4.34468        0.00000 )
+      E*z (       -0.00000       -0.00000       -3.04946 )
+           atom   21  Se    Mean Z*:       -3.91363
+      E*x (       -4.34589        0.00000        0.00000 )
+      E*y (        0.00000       -4.34589        0.00000 )
+      E*z (       -0.00000        0.00000       -3.04909 )
+           atom   22  Se    Mean Z*:       -3.91363
+      E*x (       -4.34589        0.00000        0.00000 )
+      E*y (        0.00000       -4.34589        0.00000 )
+      E*z (       -0.00000       -0.00000       -3.04909 )
+           atom   23  Se    Mean Z*:       -3.91545
+      E*x (       -4.34827       -0.00000        0.00000 )
+      E*y (        0.00000       -4.34827        0.00000 )
+      E*z (       -0.00000       -0.00000       -3.04980 )
+           atom   24  Se    Mean Z*:       -3.91363
+      E*x (       -4.34589       -0.00000        0.00000 )
+      E*y (       -0.00000       -4.34589        0.00000 )
+      E*z (       -0.00000       -0.00000       -3.04909 )
+           atom   25  O     Mean Z*:       -4.01636
+      E*x (       -4.05004        0.00000        0.00000 )
+      E*y (       -0.00000       -4.05100        0.00020 )
+      E*z (       -0.00000       -0.00008       -3.94805 )
+           atom   26  O     Mean Z*:       -4.01636
+      E*x (       -4.05004       -0.00000        0.00000 )
+      E*y (        0.00000       -4.05100        0.00020 )
+      E*z (       -0.00000       -0.00008       -3.94805 )
+           atom   27  O     Mean Z*:       -4.01636
+      E*x (       -4.05004        0.00000        0.00000 )
+      E*y (       -0.00000       -4.05100       -0.00020 )
+      E*z (       -0.00000        0.00008       -3.94805 )
+           atom   28  O     Mean Z*:       -4.01636
+      E*x (       -4.05004       -0.00000        0.00000 )
+      E*y (        0.00000       -4.05100       -0.00020 )
+      E*z (       -0.00000        0.00008       -3.94805 )
+           atom   29  O     Mean Z*:       -4.01636
+      E*x (       -4.05100       -0.00000       -0.00020 )
+      E*y (       -0.00000       -4.05004       -0.00000 )
+      E*z (        0.00008       -0.00000       -3.94805 )
+           atom   30  O     Mean Z*:       -4.01636
+      E*x (       -4.05100        0.00000       -0.00020 )
+      E*y (        0.00000       -4.05004        0.00000 )
+      E*z (        0.00008       -0.00000       -3.94805 )
+           atom   31  O     Mean Z*:       -4.01636
+      E*x (       -4.05100       -0.00000        0.00020 )
+      E*y (       -0.00000       -4.05004        0.00000 )
+      E*z (       -0.00008       -0.00000       -3.94805 )
+           atom   32  O     Mean Z*:       -4.01636
+      E*x (       -4.05100        0.00000        0.00020 )
+      E*y (        0.00000       -4.05004       -0.00000 )
+      E*z (       -0.00008       -0.00000       -3.94805 )
+           atom   33  O     Mean Z*:       -4.01714
+      E*x (       -4.05107       -0.00000       -0.00020 )
+      E*y (       -0.00000       -4.05226        0.00000 )
+      E*z (        0.00008       -0.00000       -3.94808 )
+           atom   34  O     Mean Z*:       -4.01714
+      E*x (       -4.05107       -0.00000        0.00020 )
+      E*y (       -0.00000       -4.05226        0.00000 )
+      E*z (       -0.00008       -0.00000       -3.94808 )
+           atom   35  O     Mean Z*:       -4.01714
+      E*x (       -4.05226        0.00000        0.00000 )
+      E*y (        0.00000       -4.05107        0.00020 )
+      E*z (       -0.00000       -0.00008       -3.94808 )
+           atom   36  O     Mean Z*:       -4.01714
+      E*x (       -4.05226        0.00000        0.00000 )
+      E*y (       -0.00000       -4.05107       -0.00020 )
+      E*z (       -0.00000        0.00008       -3.94808 )
+           atom   37  O     Mean Z*:       -4.01714
+      E*x (       -4.05226        0.00000        0.00000 )
+      E*y (        0.00000       -4.05107       -0.00020 )
+      E*z (       -0.00000        0.00008       -3.94808 )
+           atom   38  O     Mean Z*:       -4.01714
+      E*x (       -4.05226        0.00000        0.00000 )
+      E*y (       -0.00000       -4.05107        0.00020 )
+      E*z (       -0.00000       -0.00008       -3.94808 )
+           atom   39  O     Mean Z*:       -4.01714
+      E*x (       -4.05107       -0.00000        0.00020 )
+      E*y (       -0.00000       -4.05226       -0.00000 )
+      E*z (       -0.00008       -0.00000       -3.94808 )
+           atom   40  O     Mean Z*:       -4.01714
+      E*x (       -4.05107       -0.00000       -0.00020 )
+      E*y (       -0.00000       -4.05226       -0.00000 )
+      E*z (        0.00008       -0.00000       -3.94808 )
+
+     Raman tensor (A^2)
+
+     atom #    1    pol.  1
+      0.000000000000E+00      0.000000000000E+00      0.305364996428E+02
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+      0.305364996428E+02      0.000000000000E+00      0.000000000000E+00
+     atom #    1    pol.  2
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00      0.305364996428E+02
+      0.000000000000E+00      0.305364996428E+02      0.000000000000E+00
+     atom #    1    pol.  3
+      0.266915984407E+02      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00      0.266915984407E+02      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00      0.227427250748E+02
+     atom #    2    pol.  1
+      0.000000000000E+00      0.000000000000E+00     -0.305364996428E+02
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+     -0.305364996428E+02      0.000000000000E+00      0.000000000000E+00
+     atom #    2    pol.  2
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00     -0.305364996428E+02
+      0.000000000000E+00     -0.305364996428E+02      0.000000000000E+00
+     atom #    2    pol.  3
+     -0.266915984407E+02      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00     -0.266915984407E+02      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00     -0.227427250748E+02
+     atom #    3    pol.  1
+     -0.430249478014E-02      0.776454443548E-03      0.305368749276E+02
+      0.776454443548E-03     -0.470564683309E-02      0.166144428241E-03
+      0.305368749276E+02      0.166144428241E-03     -0.611932799454E-03
+     atom #    3    pol.  2
+     -0.470564683309E-02      0.776454443548E-03      0.166144428241E-03
+      0.776454443548E-03     -0.430249478014E-02      0.305368749276E+02
+      0.166144428241E-03      0.305368749276E+02     -0.611932799454E-03
+     atom #    3    pol.  3
+      0.266926737309E+02      0.503043292339E-03     -0.126385819333E-02
+      0.503043292339E-03      0.266926737309E+02     -0.126385819333E-02
+     -0.126385819333E-02     -0.126385819333E-02      0.227501500728E+02
+     atom #    4    pol.  1
+     -0.430249478014E-02      0.776454443548E-03     -0.305368749276E+02
+      0.776454443548E-03     -0.470564683309E-02     -0.166144428241E-03
+     -0.305368749276E+02     -0.166144428241E-03     -0.611932799454E-03
+     atom #    4    pol.  2
+     -0.470564683309E-02      0.776454443548E-03     -0.166144428241E-03
+      0.776454443548E-03     -0.430249478014E-02     -0.305368749276E+02
+     -0.166144428241E-03     -0.305368749276E+02     -0.611932799454E-03
+     atom #    4    pol.  3
+     -0.266926737309E+02     -0.503043292337E-03     -0.126385819333E-02
+     -0.503043292337E-03     -0.266926737309E+02     -0.126385819333E-02
+     -0.126385819333E-02     -0.126385819333E-02     -0.227501500728E+02
+     atom #    5    pol.  1
+      0.000000000000E+00      0.000000000000E+00      0.305387493210E+02
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+      0.305387493210E+02      0.000000000000E+00      0.000000000000E+00
+     atom #    5    pol.  2
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00      0.305356852851E+02
+      0.000000000000E+00      0.305356852851E+02      0.000000000000E+00
+     atom #    5    pol.  3
+      0.266965382755E+02      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00      0.266865689792E+02      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00      0.227441442002E+02
+     atom #    6    pol.  1
+      0.000000000000E+00      0.000000000000E+00     -0.305387493210E+02
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+     -0.305387493210E+02      0.000000000000E+00      0.000000000000E+00
+     atom #    6    pol.  2
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00     -0.305356852851E+02
+      0.000000000000E+00     -0.305356852851E+02      0.000000000000E+00
+     atom #    6    pol.  3
+     -0.266965382755E+02      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00     -0.266865689792E+02      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00     -0.227441442002E+02
+     atom #    7    pol.  1
+      0.000000000000E+00      0.000000000000E+00      0.305356852851E+02
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+      0.305356852851E+02      0.000000000000E+00      0.000000000000E+00
+     atom #    7    pol.  2
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00      0.305387493210E+02
+      0.000000000000E+00      0.305387493210E+02      0.000000000000E+00
+     atom #    7    pol.  3
+      0.266865689792E+02      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00      0.266965382755E+02      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00      0.227441442002E+02
+     atom #    8    pol.  1
+      0.000000000000E+00      0.000000000000E+00     -0.305356852851E+02
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+     -0.305356852851E+02      0.000000000000E+00      0.000000000000E+00
+     atom #    8    pol.  2
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00     -0.305387493210E+02
+      0.000000000000E+00     -0.305387493210E+02      0.000000000000E+00
+     atom #    8    pol.  3
+     -0.266865689792E+02      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00     -0.266965382755E+02      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00     -0.227441442002E+02
+     atom #    9    pol.  1
+     -0.430249478014E-02     -0.776454443548E-03      0.305368749276E+02
+     -0.776454443548E-03     -0.470564683309E-02     -0.166144428241E-03
+      0.305368749276E+02     -0.166144428241E-03     -0.611932799454E-03
+     atom #    9    pol.  2
+      0.470564683309E-02      0.776454443548E-03     -0.166144428241E-03
+      0.776454443548E-03      0.430249478014E-02      0.305368749276E+02
+     -0.166144428241E-03      0.305368749276E+02      0.611932799454E-03
+     atom #    9    pol.  3
+      0.266926737309E+02     -0.503043292338E-03     -0.126385819333E-02
+     -0.503043292338E-03      0.266926737309E+02      0.126385819333E-02
+     -0.126385819333E-02      0.126385819333E-02      0.227501500728E+02
+     atom #   10    pol.  1
+     -0.430249478014E-02     -0.776454443548E-03     -0.305368749276E+02
+     -0.776454443548E-03     -0.470564683309E-02      0.166144428241E-03
+     -0.305368749276E+02      0.166144428241E-03     -0.611932799454E-03
+     atom #   10    pol.  2
+      0.470564683309E-02      0.776454443548E-03      0.166144428241E-03
+      0.776454443548E-03      0.430249478014E-02     -0.305368749276E+02
+      0.166144428241E-03     -0.305368749276E+02      0.611932799454E-03
+     atom #   10    pol.  3
+     -0.266926737309E+02      0.503043292337E-03     -0.126385819333E-02
+      0.503043292337E-03     -0.266926737309E+02      0.126385819333E-02
+     -0.126385819333E-02      0.126385819333E-02     -0.227501500728E+02
+     atom #   11    pol.  1
+      0.430249478014E-02      0.776454443548E-03      0.305368749276E+02
+      0.776454443548E-03      0.470564683309E-02     -0.166144428241E-03
+      0.305368749276E+02     -0.166144428241E-03      0.611932799454E-03
+     atom #   11    pol.  2
+     -0.470564683309E-02     -0.776454443548E-03     -0.166144428241E-03
+     -0.776454443548E-03     -0.430249478014E-02      0.305368749276E+02
+     -0.166144428241E-03      0.305368749276E+02     -0.611932799454E-03
+     atom #   11    pol.  3
+      0.266926737309E+02     -0.503043292338E-03      0.126385819333E-02
+     -0.503043292338E-03      0.266926737309E+02     -0.126385819333E-02
+      0.126385819333E-02     -0.126385819333E-02      0.227501500728E+02
+     atom #   12    pol.  1
+      0.430249478014E-02      0.776454443548E-03     -0.305368749276E+02
+      0.776454443548E-03      0.470564683309E-02      0.166144428241E-03
+     -0.305368749276E+02      0.166144428241E-03      0.611932799454E-03
+     atom #   12    pol.  2
+     -0.470564683309E-02     -0.776454443548E-03      0.166144428241E-03
+     -0.776454443548E-03     -0.430249478014E-02     -0.305368749276E+02
+      0.166144428241E-03     -0.305368749276E+02     -0.611932799454E-03
+     atom #   12    pol.  3
+     -0.266926737309E+02      0.503043292337E-03      0.126385819333E-02
+      0.503043292337E-03     -0.266926737309E+02     -0.126385819333E-02
+      0.126385819333E-02     -0.126385819333E-02     -0.227501500728E+02
+     atom #   13    pol.  1
+      0.000000000000E+00      0.000000000000E+00      0.305377595182E+02
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+      0.305377595182E+02      0.000000000000E+00      0.000000000000E+00
+     atom #   13    pol.  2
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00      0.305377595182E+02
+      0.000000000000E+00      0.305377595182E+02      0.000000000000E+00
+     atom #   13    pol.  3
+      0.266906753759E+02      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00      0.266906753759E+02      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00      0.227455588551E+02
+     atom #   14    pol.  1
+      0.000000000000E+00      0.000000000000E+00     -0.305377595182E+02
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+     -0.305377595182E+02      0.000000000000E+00      0.000000000000E+00
+     atom #   14    pol.  2
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00     -0.305377595182E+02
+      0.000000000000E+00     -0.305377595182E+02      0.000000000000E+00
+     atom #   14    pol.  3
+     -0.266906753759E+02      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00     -0.266906753759E+02      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00     -0.227455588551E+02
+     atom #   15    pol.  1
+      0.430249478014E-02     -0.776454443548E-03      0.305368749276E+02
+     -0.776454443548E-03      0.470564683309E-02      0.166144428241E-03
+      0.305368749276E+02      0.166144428241E-03      0.611932799454E-03
+     atom #   15    pol.  2
+      0.470564683309E-02     -0.776454443548E-03      0.166144428241E-03
+     -0.776454443548E-03      0.430249478014E-02      0.305368749276E+02
+      0.166144428241E-03      0.305368749276E+02      0.611932799454E-03
+     atom #   15    pol.  3
+      0.266926737309E+02      0.503043292339E-03      0.126385819333E-02
+      0.503043292339E-03      0.266926737309E+02      0.126385819333E-02
+      0.126385819333E-02      0.126385819333E-02      0.227501500728E+02
+     atom #   16    pol.  1
+      0.430249478014E-02     -0.776454443548E-03     -0.305368749276E+02
+     -0.776454443548E-03      0.470564683309E-02     -0.166144428241E-03
+     -0.305368749276E+02     -0.166144428241E-03      0.611932799454E-03
+     atom #   16    pol.  2
+      0.470564683309E-02     -0.776454443548E-03     -0.166144428241E-03
+     -0.776454443548E-03      0.430249478014E-02     -0.305368749276E+02
+     -0.166144428241E-03     -0.305368749276E+02      0.611932799454E-03
+     atom #   16    pol.  3
+     -0.266926737309E+02     -0.503043292337E-03      0.126385819333E-02
+     -0.503043292337E-03     -0.266926737309E+02      0.126385819333E-02
+      0.126385819333E-02      0.126385819333E-02     -0.227501500728E+02
+     atom #   17    pol.  1
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+     atom #   17    pol.  2
+      0.000000000000E+00      0.000000000000E+00      0.117842252660E-18
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+      0.117842252660E-18      0.000000000000E+00      0.000000000000E+00
+     atom #   17    pol.  3
+      0.000000000000E+00     -0.294605631651E-19      0.000000000000E+00
+     -0.294605631651E-19      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+     atom #   18    pol.  1
+     -0.204992114929E-03      0.152426253727E-02      0.000000000000E+00
+      0.152426253727E-02      0.291720832741E-03      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00      0.227021418805E-03
+     atom #   18    pol.  2
+      0.291720832741E-03      0.152426253727E-02      0.000000000000E+00
+      0.152426253727E-02     -0.204992114929E-03     -0.294605631651E-19
+      0.000000000000E+00     -0.294605631651E-19      0.227021418805E-03
+     atom #   18    pol.  3
+      0.000000000000E+00      0.000000000000E+00     -0.141169147158E-03
+      0.000000000000E+00      0.589211263302E-19     -0.141169147158E-03
+     -0.141169147158E-03     -0.141169147158E-03     -0.240395490881E-19
+     atom #   19    pol.  1
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00      0.125207393452E-18
+      0.000000000000E+00      0.125207393452E-18      0.000000000000E+00
+     atom #   19    pol.  2
+      0.000000000000E+00      0.000000000000E+00     -0.353526757981E-18
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+     -0.353526757981E-18      0.000000000000E+00      0.000000000000E+00
+     atom #   19    pol.  3
+      0.000000000000E+00      0.589211263302E-19      0.000000000000E+00
+      0.589211263302E-19      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+     atom #   20    pol.  1
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00     -0.405082743520E-18
+      0.000000000000E+00     -0.405082743520E-18      0.000000000000E+00
+     atom #   20    pol.  2
+      0.000000000000E+00      0.000000000000E+00      0.589211263302E-19
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+      0.589211263302E-19      0.000000000000E+00      0.000000000000E+00
+     atom #   20    pol.  3
+      0.000000000000E+00     -0.294605631651E-19      0.000000000000E+00
+     -0.294605631651E-19      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+     atom #   21    pol.  1
+     -0.204992114929E-03     -0.152426253727E-02      0.589211263302E-19
+     -0.152426253727E-02      0.291720832741E-03      0.000000000000E+00
+      0.589211263302E-19      0.000000000000E+00      0.227021418805E-03
+     atom #   21    pol.  2
+     -0.291720832741E-03      0.152426253727E-02      0.000000000000E+00
+      0.152426253727E-02      0.204992114929E-03     -0.294605631651E-19
+      0.000000000000E+00     -0.294605631651E-19     -0.227021418805E-03
+     atom #   21    pol.  3
+      0.117842252660E-18      0.000000000000E+00     -0.141169147158E-03
+      0.000000000000E+00      0.000000000000E+00      0.141169147158E-03
+     -0.141169147158E-03      0.141169147158E-03      0.000000000000E+00
+     atom #   22    pol.  1
+      0.204992114929E-03      0.152426253727E-02      0.589211263302E-19
+      0.152426253727E-02     -0.291720832741E-03      0.000000000000E+00
+      0.589211263302E-19      0.000000000000E+00     -0.227021418805E-03
+     atom #   22    pol.  2
+      0.291720832741E-03     -0.152426253727E-02      0.589211263302E-19
+     -0.152426253727E-02     -0.204992114929E-03     -0.294605631651E-19
+      0.589211263302E-19     -0.294605631651E-19      0.227021418805E-03
+     atom #   22    pol.  3
+      0.117842252660E-18      0.000000000000E+00      0.141169147158E-03
+      0.000000000000E+00      0.000000000000E+00     -0.141169147158E-03
+      0.141169147158E-03     -0.141169147158E-03     -0.120197745440E-19
+     atom #   23    pol.  1
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+     atom #   23    pol.  2
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+     atom #   23    pol.  3
+      0.000000000000E+00      0.589211263302E-19      0.000000000000E+00
+      0.589211263302E-19      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00      0.000000000000E+00
+     atom #   24    pol.  1
+      0.204992114929E-03     -0.152426253727E-02      0.000000000000E+00
+     -0.152426253727E-02     -0.291720832741E-03      0.000000000000E+00
+      0.000000000000E+00      0.000000000000E+00     -0.227021418805E-03
+     atom #   24    pol.  2
+     -0.291720832741E-03     -0.152426253727E-02      0.000000000000E+00
+     -0.152426253727E-02      0.204992114929E-03     -0.294605631651E-19
+      0.000000000000E+00     -0.294605631651E-19     -0.227021418805E-03
+     atom #   24    pol.  3
+      0.000000000000E+00      0.000000000000E+00      0.141169147158E-03
+      0.000000000000E+00      0.589211263302E-19      0.141169147158E-03
+      0.141169147158E-03      0.141169147158E-03      0.120197745440E-19
+     atom #   25    pol.  1
+      0.413258138981E-16     -0.172753475225E-02      0.104959287975E+02
+     -0.172753475225E-02      0.000000000000E+00     -0.120670466724E-15
+      0.104959287975E+02     -0.120670466724E-15      0.000000000000E+00
+     atom #   25    pol.  2
+     -0.504867853385E-02      0.236147507989E-16     -0.603352333621E-16
+      0.236147507989E-16     -0.257810802938E-02     -0.104974000029E+02
+     -0.603352333621E-16     -0.104974000029E+02     -0.435546152599E-03
+     atom #   25    pol.  3
+     -0.220585125206E+02      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00      0.220586570900E+02     -0.106010361714E-02
+      0.000000000000E+00     -0.106010361714E-02      0.165293928171E-02
+     atom #   26    pol.  1
+      0.413258138981E-16      0.172753475225E-02     -0.104959287975E+02
+      0.172753475225E-02      0.000000000000E+00      0.000000000000E+00
+     -0.104959287975E+02      0.000000000000E+00      0.000000000000E+00
+     atom #   26    pol.  2
+      0.504867853385E-02      0.236147507989E-16      0.603352333621E-16
+      0.236147507989E-16      0.257810802938E-02      0.104974000029E+02
+      0.603352333621E-16      0.104974000029E+02      0.435546152599E-03
+     atom #   26    pol.  3
+      0.220585125206E+02     -0.150838083405E-16      0.000000000000E+00
+     -0.150838083405E-16     -0.220586570900E+02      0.106010361714E-02
+      0.000000000000E+00      0.106010361714E-02     -0.165293928171E-02
+     atom #   27    pol.  1
+     -0.413258138981E-16      0.172753475225E-02      0.104959287975E+02
+      0.172753475225E-02      0.000000000000E+00     -0.120670466724E-15
+      0.104959287975E+02     -0.120670466724E-15      0.000000000000E+00
+     atom #   27    pol.  2
+      0.504867853385E-02      0.236147507989E-16     -0.603352333621E-16
+      0.236147507989E-16      0.257810802938E-02     -0.104974000029E+02
+     -0.603352333621E-16     -0.104974000029E+02      0.435546152599E-03
+     atom #   27    pol.  3
+     -0.220585125206E+02      0.000000000000E+00      0.000000000000E+00
+      0.000000000000E+00      0.220586570900E+02      0.106010361714E-02
+      0.000000000000E+00      0.106010361714E-02      0.165293928171E-02
+     atom #   28    pol.  1
+     -0.413258138981E-16     -0.172753475225E-02     -0.104959287975E+02
+     -0.172753475225E-02      0.000000000000E+00      0.000000000000E+00
+     -0.104959287975E+02      0.000000000000E+00      0.000000000000E+00
+     atom #   28    pol.  2
+     -0.504867853385E-02     -0.236147507989E-16      0.603352333621E-16
+     -0.236147507989E-16     -0.257810802938E-02      0.104974000029E+02
+      0.603352333621E-16      0.104974000029E+02     -0.435546152599E-03
+     atom #   28    pol.  3
+      0.220585125206E+02     -0.150838083405E-16      0.000000000000E+00
+     -0.150838083405E-16     -0.220586570900E+02     -0.106010361714E-02
+      0.000000000000E+00     -0.106010361714E-02     -0.165293928171E-02
+     atom #   29    pol.  1
+      0.257810802938E-02      0.000000000000E+00     -0.104974000029E+02
+      0.000000000000E+00      0.504867853385E-02     -0.120670466724E-15
+     -0.104974000029E+02     -0.120670466724E-15      0.435546152599E-03
+     atom #   29    pol.  2
+      0.000000000000E+00      0.172753475225E-02      0.603352333621E-16
+      0.172753475225E-02      0.000000000000E+00      0.104959287975E+02
+      0.603352333621E-16      0.104959287975E+02      0.000000000000E+00
+     atom #   29    pol.  3
+      0.220586570900E+02     -0.301676166811E-16      0.106010361714E-02
+     -0.301676166811E-16     -0.220585125206E+02      0.000000000000E+00
+      0.106010361714E-02      0.000000000000E+00      0.165293928171E-02
+     atom #   30    pol.  1
+     -0.257810802938E-02      0.000000000000E+00      0.104974000029E+02
+      0.000000000000E+00     -0.504867853385E-02      0.120670466724E-15
+      0.104974000029E+02      0.120670466724E-15     -0.435546152599E-03
+     atom #   30    pol.  2
+      0.000000000000E+00     -0.172753475225E-02      0.000000000000E+00
+     -0.172753475225E-02      0.000000000000E+00     -0.104959287975E+02
+      0.000000000000E+00     -0.104959287975E+02      0.000000000000E+00
+     atom #   30    pol.  3
+     -0.220586570900E+02     -0.301676166811E-16     -0.106010361714E-02
+     -0.301676166811E-16      0.220585125206E+02      0.000000000000E+00
+     -0.106010361714E-02      0.000000000000E+00     -0.165293928171E-02
+     atom #   31    pol.  1
+     -0.257810802938E-02      0.000000000000E+00     -0.104974000029E+02
+      0.000000000000E+00     -0.504867853385E-02     -0.120670466724E-15
+     -0.104974000029E+02     -0.120670466724E-15     -0.435546152599E-03
+     atom #   31    pol.  2
+      0.000000000000E+00     -0.172753475225E-02      0.603352333621E-16
+     -0.172753475225E-02      0.000000000000E+00      0.104959287975E+02
+      0.603352333621E-16      0.104959287975E+02      0.000000000000E+00
+     atom #   31    pol.  3
+      0.220586570900E+02     -0.301676166811E-16     -0.106010361714E-02
+     -0.301676166811E-16     -0.220585125206E+02      0.000000000000E+00
+     -0.106010361714E-02      0.000000000000E+00      0.165293928171E-02
+     atom #   32    pol.  1
+      0.257810802938E-02      0.472295015978E-16      0.104974000029E+02
+      0.472295015978E-16      0.504867853385E-02      0.120670466724E-15
+      0.104974000029E+02      0.120670466724E-15      0.435546152599E-03
+     atom #   32    pol.  2
+      0.000000000000E+00      0.172753475225E-02      0.000000000000E+00
+      0.172753475225E-02      0.000000000000E+00     -0.104959287975E+02
+      0.000000000000E+00     -0.104959287975E+02      0.000000000000E+00
+     atom #   32    pol.  3
+     -0.220586570900E+02     -0.301676166811E-16      0.106010361714E-02
+     -0.301676166811E-16      0.220585125206E+02      0.000000000000E+00
+      0.106010361714E-02      0.000000000000E+00     -0.165293928171E-02
+     atom #   33    pol.  1
+     -0.223318541918E-02      0.472295015978E-16      0.104974497198E+02
+      0.472295015978E-16     -0.484267925449E-02     -0.120670466724E-15
+      0.104974497198E+02     -0.120670466724E-15     -0.521358478960E-03
+     atom #   33    pol.  2
+      0.000000000000E+00     -0.143884430891E-02     -0.603352333621E-16
+     -0.143884430891E-02      0.000000000000E+00     -0.104988617257E+02
+     -0.603352333621E-16     -0.104988617257E+02      0.000000000000E+00
+     atom #   33    pol.  3
+     -0.220591984338E+02      0.301676166811E-16     -0.845969559497E-03
+      0.301676166811E-16      0.220497650550E+02      0.000000000000E+00
+     -0.845969559497E-03      0.000000000000E+00     -0.249534931736E-02
+     atom #   34    pol.  1
+     -0.223318541918E-02     -0.472295015978E-16     -0.104974497198E+02
+     -0.472295015978E-16     -0.484267925449E-02     -0.603352333621E-16
+     -0.104974497198E+02     -0.603352333621E-16     -0.521358478960E-03
+     atom #   34    pol.  2
+      0.000000000000E+00     -0.143884430891E-02      0.603352333621E-16
+     -0.143884430891E-02      0.000000000000E+00      0.104988617257E+02
+      0.603352333621E-16      0.104988617257E+02      0.000000000000E+00
+     atom #   34    pol.  3
+      0.220591984338E+02     -0.452514250216E-16     -0.845969559497E-03
+     -0.452514250216E-16     -0.220497650550E+02      0.000000000000E+00
+     -0.845969559497E-03      0.000000000000E+00      0.249534931736E-02
+     atom #   35    pol.  1
+      0.590368769972E-17     -0.143884430891E-02      0.104988617257E+02
+     -0.143884430891E-02      0.000000000000E+00      0.120670466724E-15
+      0.104988617257E+02      0.120670466724E-15      0.000000000000E+00
+     atom #   35    pol.  2
+     -0.484267925449E-02     -0.236147507989E-16      0.120670466724E-15
+     -0.236147507989E-16     -0.223318541918E-02     -0.104974497198E+02
+      0.120670466724E-15     -0.104974497198E+02     -0.521358478960E-03
+     atom #   35    pol.  3
+     -0.220497650550E+02     -0.150838083405E-16      0.000000000000E+00
+     -0.150838083405E-16      0.220591984338E+02     -0.845969559497E-03
+      0.000000000000E+00     -0.845969559497E-03      0.249534931736E-02
+     atom #   36    pol.  1
+     -0.590368769972E-17     -0.143884430891E-02     -0.104988617257E+02
+     -0.143884430891E-02      0.000000000000E+00     -0.120670466724E-15
+     -0.104988617257E+02     -0.120670466724E-15      0.000000000000E+00
+     atom #   36    pol.  2
+     -0.484267925449E-02      0.236147507989E-16      0.120670466724E-15
+      0.236147507989E-16     -0.223318541918E-02      0.104974497198E+02
+      0.120670466724E-15      0.104974497198E+02     -0.521358478960E-03
+     atom #   36    pol.  3
+      0.220497650550E+02     -0.150838083405E-16      0.000000000000E+00
+     -0.150838083405E-16     -0.220591984338E+02     -0.845969559497E-03
+      0.000000000000E+00     -0.845969559497E-03     -0.249534931736E-02
+     atom #   37    pol.  1
+     -0.590368769972E-17      0.143884430891E-02      0.104988617257E+02
+      0.143884430891E-02      0.000000000000E+00      0.120670466724E-15
+      0.104988617257E+02      0.120670466724E-15      0.000000000000E+00
+     atom #   37    pol.  2
+      0.484267925449E-02     -0.236147507989E-16      0.120670466724E-15
+     -0.236147507989E-16      0.223318541918E-02     -0.104974497198E+02
+      0.120670466724E-15     -0.104974497198E+02      0.521358478960E-03
+     atom #   37    pol.  3
+     -0.220497650550E+02     -0.150838083405E-16      0.000000000000E+00
+     -0.150838083405E-16      0.220591984338E+02      0.845969559497E-03
+      0.000000000000E+00      0.845969559497E-03      0.249534931736E-02
+     atom #   38    pol.  1
+      0.590368769972E-17      0.143884430891E-02     -0.104988617257E+02
+      0.143884430891E-02      0.000000000000E+00     -0.120670466724E-15
+     -0.104988617257E+02     -0.120670466724E-15      0.000000000000E+00
+     atom #   38    pol.  2
+      0.484267925449E-02      0.236147507989E-16      0.120670466724E-15
+      0.236147507989E-16      0.223318541918E-02      0.104974497198E+02
+      0.120670466724E-15      0.104974497198E+02      0.521358478960E-03
+     atom #   38    pol.  3
+      0.220497650550E+02     -0.150838083405E-16      0.000000000000E+00
+     -0.150838083405E-16     -0.220591984338E+02      0.845969559497E-03
+      0.000000000000E+00      0.845969559497E-03     -0.249534931736E-02
+     atom #   39    pol.  1
+      0.223318541918E-02      0.000000000000E+00      0.104974497198E+02
+      0.000000000000E+00      0.484267925449E-02     -0.120670466724E-15
+      0.104974497198E+02     -0.120670466724E-15      0.521358478960E-03
+     atom #   39    pol.  2
+      0.000000000000E+00      0.143884430891E-02     -0.603352333621E-16
+      0.143884430891E-02      0.000000000000E+00     -0.104988617257E+02
+     -0.603352333621E-16     -0.104988617257E+02      0.000000000000E+00
+     atom #   39    pol.  3
+     -0.220591984338E+02      0.301676166811E-16      0.845969559497E-03
+      0.301676166811E-16      0.220497650550E+02      0.000000000000E+00
+      0.845969559497E-03      0.000000000000E+00     -0.249534931736E-02
+     atom #   40    pol.  1
+      0.223318541918E-02      0.000000000000E+00     -0.104974497198E+02
+      0.000000000000E+00      0.484267925449E-02     -0.603352333621E-16
+     -0.104974497198E+02     -0.603352333621E-16      0.521358478960E-03
+     atom #   40    pol.  2
+      0.000000000000E+00      0.143884430891E-02      0.603352333621E-16
+      0.143884430891E-02      0.000000000000E+00      0.104988617257E+02
+      0.603352333621E-16      0.104988617257E+02      0.000000000000E+00
+     atom #   40    pol.  3
+      0.220591984338E+02     -0.452514250216E-16      0.845969559497E-03
+     -0.452514250216E-16     -0.220497650550E+02      0.000000000000E+00
+      0.845969559497E-03      0.000000000000E+00      0.249534931736E-02
+
+
+     Representation #  76 modes #  97  98
+
+     Self-consistent Calculation
+
+      iter #   9 total cpu time :    79.4 secs   av.it.:   1.2
+      thresh= 1.098E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.246E-13
+
+      iter #  10 total cpu time :   389.2 secs   av.it.:  17.9
+      thresh= 3.530E-08 alpha_mix =  0.700 |ddv_scf|^2 =  2.952E-14
+
+      iter #  11 total cpu time :   701.9 secs   av.it.:  18.0
+      thresh= 1.718E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.552E-14
+
+      iter #  12 total cpu time :  1016.3 secs   av.it.:  18.1
+      thresh= 1.246E-08 alpha_mix =  0.700 |ddv_scf|^2 =  2.800E-15
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  77 modes #  99 100
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :  1225.4 secs   av.it.:   8.0
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.037E-07
+
+      iter #   2 total cpu time :  1563.8 secs   av.it.:  19.6
+      thresh= 3.220E-05 alpha_mix =  0.700 |ddv_scf|^2 =  4.182E-07
+
+      iter #   3 total cpu time :  1871.9 secs   av.it.:  17.7
+      thresh= 6.467E-05 alpha_mix =  0.700 |ddv_scf|^2 =  4.875E-08
+
+      iter #   4 total cpu time :  2166.0 secs   av.it.:  16.9
+      thresh= 2.208E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.039E-09
+
+      iter #   5 total cpu time :  2487.8 secs   av.it.:  18.7
+      thresh= 3.224E-06 alpha_mix =  0.700 |ddv_scf|^2 =  4.332E-11
+
+      iter #   6 total cpu time :  2811.1 secs   av.it.:  18.3
+      thresh= 6.582E-07 alpha_mix =  0.700 |ddv_scf|^2 =  3.733E-11
+
+      iter #   7 total cpu time :  3124.2 secs   av.it.:  17.5
+      thresh= 6.110E-07 alpha_mix =  0.700 |ddv_scf|^2 =  5.987E-13
+
+      iter #   8 total cpu time :  3463.4 secs   av.it.:  19.1
+      thresh= 7.737E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.550E-13
+
+      iter #   9 total cpu time :  3800.7 secs   av.it.:  19.1
+      thresh= 3.936E-08 alpha_mix =  0.700 |ddv_scf|^2 =  6.648E-14
+
+      iter #  10 total cpu time :  4128.8 secs   av.it.:  18.0
+      thresh= 2.578E-08 alpha_mix =  0.700 |ddv_scf|^2 =  6.309E-15
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  78 modes # 101 102
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :  4297.7 secs   av.it.:   5.9
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.518E-08
+
+      iter #   2 total cpu time :  4637.6 secs   av.it.:  19.3
+      thresh= 1.232E-05 alpha_mix =  0.700 |ddv_scf|^2 =  6.620E-08
+
+      iter #   3 total cpu time :  4941.9 secs   av.it.:  16.9
+      thresh= 2.573E-05 alpha_mix =  0.700 |ddv_scf|^2 =  6.558E-09
+
+      iter #   4 total cpu time :  5248.2 secs   av.it.:  17.0
+      thresh= 8.098E-06 alpha_mix =  0.700 |ddv_scf|^2 =  3.999E-10
+
+      iter #   5 total cpu time :  5560.5 secs   av.it.:  17.5
+      thresh= 2.000E-06 alpha_mix =  0.700 |ddv_scf|^2 =  2.662E-11
+
+      iter #   6 total cpu time :  5885.2 secs   av.it.:  18.2
+      thresh= 5.160E-07 alpha_mix =  0.700 |ddv_scf|^2 =  7.084E-13
+
+      iter #   7 total cpu time :  6216.4 secs   av.it.:  18.7
+      thresh= 8.417E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.208E-13
+
+      iter #   8 total cpu time :  6551.0 secs   av.it.:  18.7
+      thresh= 3.475E-08 alpha_mix =  0.700 |ddv_scf|^2 =  2.041E-14
+
+      iter #   9 total cpu time :  6888.6 secs   av.it.:  18.9
+      thresh= 1.429E-08 alpha_mix =  0.700 |ddv_scf|^2 =  6.247E-15
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  79 modes # 103 104
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :  7055.5 secs   av.it.:   7.1
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  8.070E-08
+
+      iter #   2 total cpu time :  7395.4 secs   av.it.:  19.2
+      thresh= 2.841E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.174E-07
+
+      iter #   3 total cpu time :  7717.9 secs   av.it.:  18.0
+      thresh= 3.427E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.668E-08
+
+      iter #   4 total cpu time :  8036.3 secs   av.it.:  17.8
+      thresh= 1.291E-05 alpha_mix =  0.700 |ddv_scf|^2 =  9.639E-10
+
+      iter #   5 total cpu time :  8369.4 secs   av.it.:  18.4
+      thresh= 3.105E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.281E-10
+
+      iter #   6 total cpu time :  8682.2 secs   av.it.:  17.5
+      thresh= 1.132E-06 alpha_mix =  0.700 |ddv_scf|^2 =  2.716E-11
+
+      iter #   7 total cpu time :  9000.5 secs   av.it.:  18.0
+      thresh= 5.212E-07 alpha_mix =  0.700 |ddv_scf|^2 =  4.653E-12
+
+      iter #   8 total cpu time :  9326.9 secs   av.it.:  18.4
+      thresh= 2.157E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.200E-12
+
+      iter #   9 total cpu time :  9650.5 secs   av.it.:  18.3
+      thresh= 1.096E-07 alpha_mix =  0.700 |ddv_scf|^2 =  2.699E-14
+
+      iter #  10 total cpu time :  9987.1 secs   av.it.:  18.8
+      thresh= 1.643E-08 alpha_mix =  0.700 |ddv_scf|^2 =  3.748E-14
+
+      iter #  11 total cpu time : 10304.0 secs   av.it.:  17.7
+      thresh= 1.936E-08 alpha_mix =  0.700 |ddv_scf|^2 =  9.045E-15
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  80 modes # 105 106
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time : 10478.3 secs   av.it.:   7.0
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  7.782E-08
+
+      iter #   2 total cpu time : 10815.3 secs   av.it.:  18.9
+      thresh= 2.790E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.077E-07
+
+      iter #   3 total cpu time : 11134.9 secs   av.it.:  17.8
+      thresh= 3.282E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.526E-08
+
+      iter #   4 total cpu time : 11446.8 secs   av.it.:  17.6
+      thresh= 1.235E-05 alpha_mix =  0.700 |ddv_scf|^2 =  8.296E-10
+
+      iter #   5 total cpu time : 11770.3 secs   av.it.:  18.1
+      thresh= 2.880E-06 alpha_mix =  0.700 |ddv_scf|^2 =  9.542E-12
+
+      iter #   6 total cpu time : 12100.1 secs   av.it.:  18.6
+      thresh= 3.089E-07 alpha_mix =  0.700 |ddv_scf|^2 =  9.908E-13
+
+      iter #   7 total cpu time : 12443.1 secs   av.it.:  19.1
+      thresh= 9.954E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.078E-13
+
+      iter #   8 total cpu time : 12783.9 secs   av.it.:  19.0
+      thresh= 3.283E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.509E-14
+
+      iter #   9 total cpu time : 13126.8 secs   av.it.:  19.4
+      thresh= 1.228E-08 alpha_mix =  0.700 |ddv_scf|^2 =  5.870E-15
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  81 modes # 107 108
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time : 13296.1 secs   av.it.:   6.0
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  3.733E-08
+
+      iter #   2 total cpu time : 13629.1 secs   av.it.:  18.8
+      thresh= 1.932E-05 alpha_mix =  0.700 |ddv_scf|^2 =  2.841E-07
+
+      iter #   3 total cpu time : 13922.0 secs   av.it.:  16.2
+      thresh= 5.330E-05 alpha_mix =  0.700 |ddv_scf|^2 =  3.620E-09
+
+      iter #   4 total cpu time : 14241.8 secs   av.it.:  17.9
+      thresh= 6.017E-06 alpha_mix =  0.700 |ddv_scf|^2 =  3.594E-10
+
+      iter #   5 total cpu time : 14557.1 secs   av.it.:  17.5
+      thresh= 1.896E-06 alpha_mix =  0.700 |ddv_scf|^2 =  2.102E-11
+
+      iter #   6 total cpu time : 14881.9 secs   av.it.:  18.3
+      thresh= 4.584E-07 alpha_mix =  0.700 |ddv_scf|^2 =  7.178E-13
+
+      iter #   7 total cpu time : 15205.0 secs   av.it.:  18.3
+      thresh= 8.472E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.534E-13
+
+      iter #   8 total cpu time : 15531.3 secs   av.it.:  18.3
+      thresh= 3.917E-08 alpha_mix =  0.700 |ddv_scf|^2 =  3.742E-14
+
+      iter #   9 total cpu time : 15844.4 secs   av.it.:  17.6
+      thresh= 1.934E-08 alpha_mix =  0.700 |ddv_scf|^2 =  2.620E-15
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  82 modes # 109 110
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time : 16048.2 secs   av.it.:   7.0
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  3.103E-08
+
+      iter #   2 total cpu time : 16400.2 secs   av.it.:  19.8
+      thresh= 1.762E-05 alpha_mix =  0.700 |ddv_scf|^2 =  5.981E-08
+
+      iter #   3 total cpu time : 16731.3 secs   av.it.:  18.4
+      thresh= 2.446E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.625E-08
+
+      iter #   4 total cpu time : 17046.5 secs   av.it.:  17.3
+      thresh= 1.275E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.013E-09
+
+      iter #   5 total cpu time : 17352.0 secs   av.it.:  17.4
+      thresh= 3.182E-06 alpha_mix =  0.700 |ddv_scf|^2 =  2.157E-11
+
+      iter #   6 total cpu time : 17683.3 secs   av.it.:  18.8
+      thresh= 4.644E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.916E-11
+
+      iter #   7 total cpu time : 17997.8 secs   av.it.:  17.8
+      thresh= 4.378E-07 alpha_mix =  0.700 |ddv_scf|^2 =  5.139E-13
+
+      iter #   8 total cpu time : 18334.0 secs   av.it.:  19.0
+      thresh= 7.168E-08 alpha_mix =  0.700 |ddv_scf|^2 =  5.708E-14
+
+      iter #   9 total cpu time : 18674.3 secs   av.it.:  19.3
+      thresh= 2.389E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.817E-14
+
+      iter #  10 total cpu time : 19007.7 secs   av.it.:  18.9
+      thresh= 1.348E-08 alpha_mix =  0.700 |ddv_scf|^2 =  4.162E-15
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  83 modes # 111 112
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time : 19170.7 secs   av.it.:   7.1
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.560E-07
+
+      iter #   2 total cpu time : 19505.6 secs   av.it.:  18.9
+      thresh= 3.950E-05 alpha_mix =  0.700 |ddv_scf|^2 =  6.202E-07
+
+      iter #   3 total cpu time : 19807.7 secs   av.it.:  16.8
+      thresh= 7.876E-05 alpha_mix =  0.700 |ddv_scf|^2 =  3.309E-08
+
+      iter #   4 total cpu time : 20123.8 secs   av.it.:  17.7
+      thresh= 1.819E-05 alpha_mix =  0.700 |ddv_scf|^2 =  5.956E-09
+
+      iter #   5 total cpu time : 20437.1 secs   av.it.:  17.5
+      thresh= 7.717E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.083E-10
+
+      iter #   6 total cpu time : 20773.0 secs   av.it.:  18.7
+      thresh= 1.041E-06 alpha_mix =  0.700 |ddv_scf|^2 =  6.225E-11
+
+      iter #   7 total cpu time : 21097.3 secs   av.it.:  17.8
+      thresh= 7.890E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.155E-11
+
+      iter #   8 total cpu time : 21423.1 secs   av.it.:  18.3
+      thresh= 3.398E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.207E-12
+
+      iter #   9 total cpu time : 21741.0 secs   av.it.:  17.9
+      thresh= 1.099E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.245E-13
+
+      iter #  10 total cpu time : 22057.2 secs   av.it.:  17.8
+      thresh= 3.528E-08 alpha_mix =  0.700 |ddv_scf|^2 =  2.955E-14
+
+      iter #  11 total cpu time : 22375.1 secs   av.it.:  17.9
+      thresh= 1.719E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.550E-14
+
+      iter #  12 total cpu time : 22695.9 secs   av.it.:  17.9
+      thresh= 1.245E-08 alpha_mix =  0.700 |ddv_scf|^2 =  2.802E-15
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  84 modes # 113 114
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time : 22879.3 secs   av.it.:   7.9
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.655E-07
+
+      iter #   2 total cpu time : 23221.1 secs   av.it.:  19.5
+      thresh= 4.068E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.311E-06
+
+      iter #   3 total cpu time : 23521.8 secs   av.it.:  16.8
+      thresh= 1.145E-04 alpha_mix =  0.700 |ddv_scf|^2 =  1.967E-08
+
+      iter #   4 total cpu time : 23844.7 secs   av.it.:  18.1
+      thresh= 1.403E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.331E-09
+
+      iter #   5 total cpu time : 24166.2 secs   av.it.:  18.2
+      thresh= 3.648E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.575E-10
+
+      iter #   6 total cpu time : 24483.8 secs   av.it.:  18.0
+      thresh= 1.255E-06 alpha_mix =  0.700 |ddv_scf|^2 =  2.118E-11
+
+      iter #   7 total cpu time : 24803.9 secs   av.it.:  18.1
+      thresh= 4.602E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.898E-12
+
+      iter #   8 total cpu time : 25146.1 secs   av.it.:  19.0
+      thresh= 1.378E-07 alpha_mix =  0.700 |ddv_scf|^2 =  9.692E-13
+
+      iter #   9 total cpu time : 25469.8 secs   av.it.:  18.3
+      thresh= 9.845E-08 alpha_mix =  0.700 |ddv_scf|^2 =  8.101E-14
+
+      iter #  10 total cpu time : 25811.7 secs   av.it.:  19.4
+      thresh= 2.846E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.687E-13
+
+      iter #  11 total cpu time : 26116.6 secs   av.it.:  17.1
+      thresh= 4.107E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.151E-15
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  85 modes # 115 116
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time : 26283.5 secs   av.it.:   6.0
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.812E-08
+
+      iter #   2 total cpu time : 26620.0 secs   av.it.:  19.1
+      thresh= 1.346E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.070E-07
+
+      iter #   3 total cpu time : 26919.2 secs   av.it.:  16.5
+      thresh= 3.272E-05 alpha_mix =  0.700 |ddv_scf|^2 =  3.926E-09
+
+      iter #   4 total cpu time : 27236.9 secs   av.it.:  17.8
+      thresh= 6.266E-06 alpha_mix =  0.700 |ddv_scf|^2 =  3.388E-10
+
+      iter #   5 total cpu time : 27550.9 secs   av.it.:  17.6
+      thresh= 1.841E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.754E-11
+
+      iter #   6 total cpu time : 27875.0 secs   av.it.:  18.4
+      thresh= 4.189E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.672E-13
+
+      iter #   7 total cpu time : 28215.9 secs   av.it.:  19.4
+      thresh= 4.089E-08 alpha_mix =  0.700 |ddv_scf|^2 =  5.538E-14
+
+      iter #   8 total cpu time : 28554.4 secs   av.it.:  19.1
+      thresh= 2.353E-08 alpha_mix =  0.700 |ddv_scf|^2 =  2.126E-14
+
+      iter #   9 total cpu time : 28876.3 secs   av.it.:  18.1
+      thresh= 1.458E-08 alpha_mix =  0.700 |ddv_scf|^2 =  2.618E-15
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  86 modes # 117 118
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time : 29045.6 secs   av.it.:   7.7
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.676E-07
+
+      iter #   2 total cpu time : 29396.4 secs   av.it.:  19.2
+      thresh= 4.093E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.334E-06
+
+      iter #   3 total cpu time : 29696.0 secs   av.it.:  16.6
+      thresh= 1.155E-04 alpha_mix =  0.700 |ddv_scf|^2 =  1.954E-08
+
+      iter #   4 total cpu time : 30017.1 secs   av.it.:  18.0
+      thresh= 1.398E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.328E-09
+
+      iter #   5 total cpu time : 30340.5 secs   av.it.:  18.1
+      thresh= 3.644E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.578E-10
+
+      iter #   6 total cpu time : 30659.8 secs   av.it.:  17.9
+      thresh= 1.256E-06 alpha_mix =  0.700 |ddv_scf|^2 =  2.151E-11
+
+      iter #   7 total cpu time : 30983.2 secs   av.it.:  17.9
+      thresh= 4.638E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.874E-12
+
+      iter #   8 total cpu time : 31318.7 secs   av.it.:  18.9
+      thresh= 1.369E-07 alpha_mix =  0.700 |ddv_scf|^2 =  9.954E-13
+
+      iter #   9 total cpu time : 31643.7 secs   av.it.:  18.2
+      thresh= 9.977E-08 alpha_mix =  0.700 |ddv_scf|^2 =  8.122E-14
+
+      iter #  10 total cpu time : 31981.8 secs   av.it.:  19.2
+      thresh= 2.850E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.702E-13
+
+      iter #  11 total cpu time : 32284.6 secs   av.it.:  16.8
+      thresh= 4.126E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.213E-15
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  87 modes # 119 120
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time : 32455.9 secs   av.it.:   7.2
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  2.314E-07
+
+      iter #   2 total cpu time : 32788.5 secs   av.it.:  18.6
+      thresh= 4.811E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.124E-06
+
+      iter #   3 total cpu time : 33082.9 secs   av.it.:  16.3
+      thresh= 1.060E-04 alpha_mix =  0.700 |ddv_scf|^2 =  3.853E-08
+
+      iter #   4 total cpu time : 33398.6 secs   av.it.:  17.5
+      thresh= 1.963E-05 alpha_mix =  0.700 |ddv_scf|^2 =  5.934E-09
+
+      iter #   5 total cpu time : 33715.6 secs   av.it.:  17.5
+      thresh= 7.704E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.346E-11
+
+      iter #   6 total cpu time : 34050.5 secs   av.it.:  19.0
+      thresh= 3.669E-07 alpha_mix =  0.700 |ddv_scf|^2 =  5.109E-12
+
+      iter #   7 total cpu time : 34377.4 secs   av.it.:  18.4
+      thresh= 2.260E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.905E-12
+
+      iter #   8 total cpu time : 34701.9 secs   av.it.:  18.3
+      thresh= 1.380E-07 alpha_mix =  0.700 |ddv_scf|^2 =  4.907E-13
+
+      iter #   9 total cpu time : 35028.0 secs   av.it.:  18.2
+      thresh= 7.005E-08 alpha_mix =  0.700 |ddv_scf|^2 =  7.712E-14
+
+      iter #  10 total cpu time : 35349.8 secs   av.it.:  18.0
+      thresh= 2.777E-08 alpha_mix =  0.700 |ddv_scf|^2 =  2.372E-14
+
+      iter #  11 total cpu time : 35673.6 secs   av.it.:  18.1
+      thresh= 1.540E-08 alpha_mix =  0.700 |ddv_scf|^2 =  3.366E-14
+
+      iter #  12 total cpu time : 35980.6 secs   av.it.:  17.2
+      thresh= 1.835E-08 alpha_mix =  0.700 |ddv_scf|^2 =  8.932E-16
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+ 
+     Number of q in the star =    1
+     List of q in the star:
+          1   0.000000000   0.000000000   0.000000000
+
+          Dielectric constant in cartesian axis 
+
+          (      15.058049375       0.000000000       0.000000000 )
+          (       0.000000000      15.058049375       0.000000000 )
+          (       0.000000000       0.000000000      10.985370746 )
+
+          Effective charges (d Force / dE) in cartesian axis without acoustic sum rule applied (asr)
+
+           atom    1  Bi    Mean Z*:        5.99309
+      Ex  (        6.24409        0.00000        0.00000 )
+      Ey  (        0.00000        6.24409        0.00000 )
+      Ez  (        0.00000        0.00000        5.49110 )
+           atom    2  Bi    Mean Z*:        5.99309
+      Ex  (        6.24409        0.00000        0.00000 )
+      Ey  (        0.00000        6.24409        0.00000 )
+      Ez  (        0.00000        0.00000        5.49110 )
+           atom    3  Bi    Mean Z*:        5.99080
+      Ex  (        6.24069       -0.00000       -0.00093 )
+      Ey  (       -0.00000        6.24069       -0.00093 )
+      Ez  (        0.00018        0.00018        5.49102 )
+           atom    4  Bi    Mean Z*:        5.99080
+      Ex  (        6.24069       -0.00000        0.00093 )
+      Ey  (       -0.00000        6.24069        0.00093 )
+      Ez  (       -0.00018       -0.00018        5.49102 )
+           atom    5  Bi    Mean Z*:        5.99083
+      Ex  (        6.24407        0.00000        0.00000 )
+      Ey  (        0.00000        6.23712        0.00000 )
+      Ez  (        0.00000        0.00000        5.49129 )
+           atom    6  Bi    Mean Z*:        5.99083
+      Ex  (        6.24407        0.00000        0.00000 )
+      Ey  (        0.00000        6.23712        0.00000 )
+      Ez  (        0.00000        0.00000        5.49129 )
+           atom    7  Bi    Mean Z*:        5.99083
+      Ex  (        6.23712        0.00000        0.00000 )
+      Ey  (        0.00000        6.24407        0.00000 )
+      Ez  (        0.00000        0.00000        5.49129 )
+           atom    8  Bi    Mean Z*:        5.99083
+      Ex  (        6.23712        0.00000        0.00000 )
+      Ey  (        0.00000        6.24407        0.00000 )
+      Ez  (        0.00000        0.00000        5.49129 )
+           atom    9  Bi    Mean Z*:        5.99080
+      Ex  (        6.24069        0.00000       -0.00093 )
+      Ey  (        0.00000        6.24069        0.00093 )
+      Ez  (        0.00018       -0.00018        5.49102 )
+           atom   10  Bi    Mean Z*:        5.99080
+      Ex  (        6.24069        0.00000        0.00093 )
+      Ey  (        0.00000        6.24069       -0.00093 )
+      Ez  (       -0.00018        0.00018        5.49102 )
+           atom   11  Bi    Mean Z*:        5.99080
+      Ex  (        6.24069        0.00000        0.00093 )
+      Ey  (        0.00000        6.24069       -0.00093 )
+      Ez  (       -0.00018        0.00018        5.49102 )
+           atom   12  Bi    Mean Z*:        5.99080
+      Ex  (        6.24069        0.00000       -0.00093 )
+      Ey  (        0.00000        6.24069        0.00093 )
+      Ez  (        0.00018       -0.00018        5.49102 )
+           atom   13  Bi    Mean Z*:        5.98857
+      Ex  (        6.23712        0.00000        0.00000 )
+      Ey  (        0.00000        6.23712        0.00000 )
+      Ez  (        0.00000        0.00000        5.49147 )
+           atom   14  Bi    Mean Z*:        5.98857
+      Ex  (        6.23712        0.00000        0.00000 )
+      Ey  (        0.00000        6.23712        0.00000 )
+      Ez  (        0.00000        0.00000        5.49147 )
+           atom   15  Bi    Mean Z*:        5.99080
+      Ex  (        6.24069       -0.00000        0.00093 )
+      Ey  (       -0.00000        6.24069        0.00093 )
+      Ez  (       -0.00018       -0.00018        5.49102 )
+           atom   16  Bi    Mean Z*:        5.99080
+      Ex  (        6.24069       -0.00000       -0.00093 )
+      Ey  (       -0.00000        6.24069       -0.00093 )
+      Ez  (        0.00018        0.00018        5.49102 )
+           atom   17  Se    Mean Z*:       -3.89561
+      Ex  (       -4.32807        0.00000        0.00000 )
+      Ey  (        0.00000       -4.32807        0.00000 )
+      Ez  (        0.00000        0.00000       -3.03067 )
+           atom   18  Se    Mean Z*:       -3.89649
+      Ex  (       -4.32941       -0.00000        0.00000 )
+      Ey  (       -0.00000       -4.32941        0.00000 )
+      Ez  (        0.00000        0.00000       -3.03064 )
+           atom   19  Se    Mean Z*:       -3.89696
+      Ex  (       -4.32820        0.00000        0.00000 )
+      Ey  (        0.00000       -4.33167        0.00000 )
+      Ez  (        0.00000        0.00000       -3.03101 )
+           atom   20  Se    Mean Z*:       -3.89696
+      Ex  (       -4.33167        0.00000        0.00000 )
+      Ey  (        0.00000       -4.32820        0.00000 )
+      Ez  (        0.00000        0.00000       -3.03101 )
+           atom   21  Se    Mean Z*:       -3.89649
+      Ex  (       -4.32941        0.00000        0.00000 )
+      Ey  (        0.00000       -4.32941        0.00000 )
+      Ez  (        0.00000        0.00000       -3.03064 )
+           atom   22  Se    Mean Z*:       -3.89649
+      Ex  (       -4.32941        0.00000        0.00000 )
+      Ey  (        0.00000       -4.32941        0.00000 )
+      Ez  (        0.00000       -0.00000       -3.03064 )
+           atom   23  Se    Mean Z*:       -3.89831
+      Ex  (       -4.33179        0.00000        0.00000 )
+      Ey  (        0.00000       -4.33179        0.00000 )
+      Ez  (        0.00000        0.00000       -3.03135 )
+           atom   24  Se    Mean Z*:       -3.89649
+      Ex  (       -4.32941       -0.00000        0.00000 )
+      Ey  (       -0.00000       -4.32941        0.00000 )
+      Ez  (        0.00000       -0.00000       -3.03064 )
+           atom   25  O     Mean Z*:       -3.99923
+      Ex  (       -4.03356        0.00000        0.00000 )
+      Ey  (       -0.00000       -4.03452        0.00020 )
+      Ez  (        0.00000       -0.00008       -3.92961 )
+           atom   26  O     Mean Z*:       -3.99923
+      Ex  (       -4.03356        0.00000        0.00000 )
+      Ey  (        0.00000       -4.03452        0.00020 )
+      Ez  (        0.00000       -0.00008       -3.92961 )
+           atom   27  O     Mean Z*:       -3.99923
+      Ex  (       -4.03356        0.00000        0.00000 )
+      Ey  (       -0.00000       -4.03452       -0.00020 )
+      Ez  (        0.00000        0.00008       -3.92961 )
+           atom   28  O     Mean Z*:       -3.99923
+      Ex  (       -4.03356        0.00000        0.00000 )
+      Ey  (        0.00000       -4.03452       -0.00020 )
+      Ez  (        0.00000        0.00008       -3.92961 )
+           atom   29  O     Mean Z*:       -3.99923
+      Ex  (       -4.03452        0.00000       -0.00020 )
+      Ey  (       -0.00000       -4.03356       -0.00000 )
+      Ez  (        0.00008        0.00000       -3.92961 )
+           atom   30  O     Mean Z*:       -3.99923
+      Ex  (       -4.03452        0.00000       -0.00020 )
+      Ey  (        0.00000       -4.03356        0.00000 )
+      Ez  (        0.00008        0.00000       -3.92961 )
+           atom   31  O     Mean Z*:       -3.99923
+      Ex  (       -4.03452        0.00000        0.00020 )
+      Ey  (       -0.00000       -4.03356        0.00000 )
+      Ez  (       -0.00008        0.00000       -3.92961 )
+           atom   32  O     Mean Z*:       -3.99923
+      Ex  (       -4.03452        0.00000        0.00020 )
+      Ey  (        0.00000       -4.03356       -0.00000 )
+      Ez  (       -0.00008        0.00000       -3.92961 )
+           atom   33  O     Mean Z*:       -4.00000
+      Ex  (       -4.03459        0.00000       -0.00020 )
+      Ey  (       -0.00000       -4.03578        0.00000 )
+      Ez  (        0.00008        0.00000       -3.92963 )
+           atom   34  O     Mean Z*:       -4.00000
+      Ex  (       -4.03459       -0.00000        0.00020 )
+      Ey  (       -0.00000       -4.03578        0.00000 )
+      Ez  (       -0.00008        0.00000       -3.92963 )
+           atom   35  O     Mean Z*:       -4.00000
+      Ex  (       -4.03578        0.00000        0.00000 )
+      Ey  (        0.00000       -4.03459        0.00020 )
+      Ez  (        0.00000       -0.00008       -3.92963 )
+           atom   36  O     Mean Z*:       -4.00000
+      Ex  (       -4.03578        0.00000        0.00000 )
+      Ey  (       -0.00000       -4.03459       -0.00020 )
+      Ez  (        0.00000        0.00008       -3.92963 )
+           atom   37  O     Mean Z*:       -4.00000
+      Ex  (       -4.03578        0.00000        0.00000 )
+      Ey  (        0.00000       -4.03459       -0.00020 )
+      Ez  (        0.00000        0.00008       -3.92963 )
+           atom   38  O     Mean Z*:       -4.00000
+      Ex  (       -4.03578        0.00000        0.00000 )
+      Ey  (       -0.00000       -4.03459        0.00020 )
+      Ez  (        0.00000       -0.00008       -3.92963 )
+           atom   39  O     Mean Z*:       -4.00000
+      Ex  (       -4.03459        0.00000        0.00020 )
+      Ey  (       -0.00000       -4.03578       -0.00000 )
+      Ez  (       -0.00008        0.00000       -3.92963 )
+           atom   40  O     Mean Z*:       -4.00000
+      Ex  (       -4.03459       -0.00000       -0.00020 )
+      Ey  (       -0.00000       -4.03578       -0.00000 )
+      Ez  (        0.00008        0.00000       -3.92963 )
+
+          Effective charges Sum: Mean:        0.68545
+              0.65920       -0.00000        0.00000
+              0.00000        0.65920        0.00000
+             -0.00000       -0.00000        0.73796
+
+          Effective charges (d Force / dE) in cartesian axis with asr applied: 
+           atom    1  Bi    Mean Z*:        5.97596
+      E*x (        6.22761       -0.00000        0.00000 )
+      E*y (        0.00000        6.22761        0.00000 )
+      E*z (       -0.00000       -0.00000        5.47265 )
+           atom    2  Bi    Mean Z*:        5.97596
+      E*x (        6.22761       -0.00000        0.00000 )
+      E*y (        0.00000        6.22761        0.00000 )
+      E*z (       -0.00000       -0.00000        5.47265 )
+           atom    3  Bi    Mean Z*:        5.97367
+      E*x (        6.22421       -0.00000       -0.00093 )
+      E*y (       -0.00000        6.22421       -0.00093 )
+      E*z (        0.00018        0.00018        5.47257 )
+           atom    4  Bi    Mean Z*:        5.97367
+      E*x (        6.22421       -0.00000        0.00093 )
+      E*y (       -0.00000        6.22421        0.00093 )
+      E*z (       -0.00018       -0.00018        5.47257 )
+           atom    5  Bi    Mean Z*:        5.97369
+      E*x (        6.22759       -0.00000        0.00000 )
+      E*y (        0.00000        6.22064        0.00000 )
+      E*z (       -0.00000       -0.00000        5.47284 )
+           atom    6  Bi    Mean Z*:        5.97369
+      E*x (        6.22759       -0.00000        0.00000 )
+      E*y (        0.00000        6.22064        0.00000 )
+      E*z (       -0.00000       -0.00000        5.47284 )
+           atom    7  Bi    Mean Z*:        5.97369
+      E*x (        6.22064       -0.00000        0.00000 )
+      E*y (        0.00000        6.22759        0.00000 )
+      E*z (       -0.00000       -0.00000        5.47284 )
+           atom    8  Bi    Mean Z*:        5.97369
+      E*x (        6.22064       -0.00000        0.00000 )
+      E*y (        0.00000        6.22759        0.00000 )
+      E*z (       -0.00000       -0.00000        5.47284 )
+           atom    9  Bi    Mean Z*:        5.97367
+      E*x (        6.22421        0.00000       -0.00093 )
+      E*y (        0.00000        6.22421        0.00093 )
+      E*z (        0.00018       -0.00018        5.47257 )
+           atom   10  Bi    Mean Z*:        5.97367
+      E*x (        6.22421        0.00000        0.00093 )
+      E*y (        0.00000        6.22421       -0.00093 )
+      E*z (       -0.00018        0.00018        5.47257 )
+           atom   11  Bi    Mean Z*:        5.97367
+      E*x (        6.22421        0.00000        0.00093 )
+      E*y (        0.00000        6.22421       -0.00093 )
+      E*z (       -0.00018        0.00018        5.47257 )
+           atom   12  Bi    Mean Z*:        5.97367
+      E*x (        6.22421        0.00000       -0.00093 )
+      E*y (        0.00000        6.22421        0.00093 )
+      E*z (        0.00018       -0.00018        5.47257 )
+           atom   13  Bi    Mean Z*:        5.97144
+      E*x (        6.22064       -0.00000        0.00000 )
+      E*y (        0.00000        6.22064        0.00000 )
+      E*z (       -0.00000       -0.00000        5.47302 )
+           atom   14  Bi    Mean Z*:        5.97144
+      E*x (        6.22064       -0.00000        0.00000 )
+      E*y (        0.00000        6.22064        0.00000 )
+      E*z (       -0.00000       -0.00000        5.47302 )
+           atom   15  Bi    Mean Z*:        5.97367
+      E*x (        6.22421       -0.00000        0.00093 )
+      E*y (       -0.00000        6.22421        0.00093 )
+      E*z (       -0.00018       -0.00018        5.47257 )
+           atom   16  Bi    Mean Z*:        5.97367
+      E*x (        6.22421       -0.00000       -0.00093 )
+      E*y (       -0.00000        6.22421       -0.00093 )
+      E*z (        0.00018        0.00018        5.47257 )
+           atom   17  Se    Mean Z*:       -3.91274
+      E*x (       -4.34455       -0.00000        0.00000 )
+      E*y (        0.00000       -4.34455        0.00000 )
+      E*z (       -0.00000       -0.00000       -3.04912 )
+           atom   18  Se    Mean Z*:       -3.91363
+      E*x (       -4.34589       -0.00000        0.00000 )
+      E*y (       -0.00000       -4.34589        0.00000 )
+      E*z (       -0.00000        0.00000       -3.04909 )
+           atom   19  Se    Mean Z*:       -3.91409
+      E*x (       -4.34468       -0.00000        0.00000 )
+      E*y (        0.00000       -4.34815        0.00000 )
+      E*z (       -0.00000       -0.00000       -3.04946 )
+           atom   20  Se    Mean Z*:       -3.91409
+      E*x (       -4.34815       -0.00000        0.00000 )
+      E*y (        0.00000       -4.34468        0.00000 )
+      E*z (       -0.00000       -0.00000       -3.04946 )
+           atom   21  Se    Mean Z*:       -3.91363
+      E*x (       -4.34589        0.00000        0.00000 )
+      E*y (        0.00000       -4.34589        0.00000 )
+      E*z (       -0.00000        0.00000       -3.04909 )
+           atom   22  Se    Mean Z*:       -3.91363
+      E*x (       -4.34589        0.00000        0.00000 )
+      E*y (        0.00000       -4.34589        0.00000 )
+      E*z (       -0.00000       -0.00000       -3.04909 )
+           atom   23  Se    Mean Z*:       -3.91545
+      E*x (       -4.34827       -0.00000        0.00000 )
+      E*y (        0.00000       -4.34827        0.00000 )
+      E*z (       -0.00000       -0.00000       -3.04980 )
+           atom   24  Se    Mean Z*:       -3.91363
+      E*x (       -4.34589       -0.00000        0.00000 )
+      E*y (       -0.00000       -4.34589        0.00000 )
+      E*z (       -0.00000       -0.00000       -3.04909 )
+           atom   25  O     Mean Z*:       -4.01636
+      E*x (       -4.05004        0.00000        0.00000 )
+      E*y (       -0.00000       -4.05100        0.00020 )
+      E*z (       -0.00000       -0.00008       -3.94805 )
+           atom   26  O     Mean Z*:       -4.01636
+      E*x (       -4.05004       -0.00000        0.00000 )
+      E*y (        0.00000       -4.05100        0.00020 )
+      E*z (       -0.00000       -0.00008       -3.94805 )
+           atom   27  O     Mean Z*:       -4.01636
+      E*x (       -4.05004        0.00000        0.00000 )
+      E*y (       -0.00000       -4.05100       -0.00020 )
+      E*z (       -0.00000        0.00008       -3.94805 )
+           atom   28  O     Mean Z*:       -4.01636
+      E*x (       -4.05004       -0.00000        0.00000 )
+      E*y (        0.00000       -4.05100       -0.00020 )
+      E*z (       -0.00000        0.00008       -3.94805 )
+           atom   29  O     Mean Z*:       -4.01636
+      E*x (       -4.05100       -0.00000       -0.00020 )
+      E*y (       -0.00000       -4.05004       -0.00000 )
+      E*z (        0.00008       -0.00000       -3.94805 )
+           atom   30  O     Mean Z*:       -4.01636
+      E*x (       -4.05100        0.00000       -0.00020 )
+      E*y (        0.00000       -4.05004        0.00000 )
+      E*z (        0.00008       -0.00000       -3.94805 )
+           atom   31  O     Mean Z*:       -4.01636
+      E*x (       -4.05100       -0.00000        0.00020 )
+      E*y (       -0.00000       -4.05004        0.00000 )
+      E*z (       -0.00008       -0.00000       -3.94805 )
+           atom   32  O     Mean Z*:       -4.01636
+      E*x (       -4.05100        0.00000        0.00020 )
+      E*y (        0.00000       -4.05004       -0.00000 )
+      E*z (       -0.00008       -0.00000       -3.94805 )
+           atom   33  O     Mean Z*:       -4.01714
+      E*x (       -4.05107       -0.00000       -0.00020 )
+      E*y (       -0.00000       -4.05226        0.00000 )
+      E*z (        0.00008       -0.00000       -3.94808 )
+           atom   34  O     Mean Z*:       -4.01714
+      E*x (       -4.05107       -0.00000        0.00020 )
+      E*y (       -0.00000       -4.05226        0.00000 )
+      E*z (       -0.00008       -0.00000       -3.94808 )
+           atom   35  O     Mean Z*:       -4.01714
+      E*x (       -4.05226        0.00000        0.00000 )
+      E*y (        0.00000       -4.05107        0.00020 )
+      E*z (       -0.00000       -0.00008       -3.94808 )
+           atom   36  O     Mean Z*:       -4.01714
+      E*x (       -4.05226        0.00000        0.00000 )
+      E*y (       -0.00000       -4.05107       -0.00020 )
+      E*z (       -0.00000        0.00008       -3.94808 )
+           atom   37  O     Mean Z*:       -4.01714
+      E*x (       -4.05226        0.00000        0.00000 )
+      E*y (        0.00000       -4.05107       -0.00020 )
+      E*z (       -0.00000        0.00008       -3.94808 )
+           atom   38  O     Mean Z*:       -4.01714
+      E*x (       -4.05226        0.00000        0.00000 )
+      E*y (       -0.00000       -4.05107        0.00020 )
+      E*z (       -0.00000       -0.00008       -3.94808 )
+           atom   39  O     Mean Z*:       -4.01714
+      E*x (       -4.05107       -0.00000        0.00020 )
+      E*y (       -0.00000       -4.05226       -0.00000 )
+      E*z (       -0.00008       -0.00000       -3.94808 )
+           atom   40  O     Mean Z*:       -4.01714
+      E*x (       -4.05107       -0.00000       -0.00020 )
+      E*y (       -0.00000       -4.05226       -0.00000 )
+      E*z (        0.00008       -0.00000       -3.94808 )
+
+     Diagonalizing the dynamical matrix
+
+     q = (    0.000000000   0.000000000   0.000000000 ) 
+
+ **************************************************************************
+     freq (    1) =      -1.700205 [THz] =     -56.712721 [cm-1]
+     freq (    2) =      -1.700205 [THz] =     -56.712721 [cm-1]
+     freq (    3) =      -0.883930 [THz] =     -29.484739 [cm-1]
+     freq (    4) =      -0.883930 [THz] =     -29.484739 [cm-1]
+     freq (    5) =      -0.685054 [THz] =     -22.850935 [cm-1]
+     freq (    6) =       0.386487 [THz] =      12.891802 [cm-1]
+     freq (    7) =       0.386487 [THz] =      12.891802 [cm-1]
+     freq (    8) =       0.978451 [THz] =      32.637608 [cm-1]
+     freq (    9) =       0.978451 [THz] =      32.637608 [cm-1]
+     freq (   10) =       1.228513 [THz] =      40.978798 [cm-1]
+     freq (   11) =       1.228513 [THz] =      40.978798 [cm-1]
+     freq (   12) =       1.246458 [THz] =      41.577377 [cm-1]
+     freq (   13) =       1.343482 [THz] =      44.813727 [cm-1]
+     freq (   14) =       1.380866 [THz] =      46.060729 [cm-1]
+     freq (   15) =       1.474251 [THz] =      49.175731 [cm-1]
+     freq (   16) =       1.474251 [THz] =      49.175731 [cm-1]
+     freq (   17) =       1.480505 [THz] =      49.384345 [cm-1]
+     freq (   18) =       1.638568 [THz] =      54.656753 [cm-1]
+     freq (   19) =       1.676987 [THz] =      55.938273 [cm-1]
+     freq (   20) =       1.676987 [THz] =      55.938273 [cm-1]
+     freq (   21) =       1.736580 [THz] =      57.926075 [cm-1]
+     freq (   22) =       1.736580 [THz] =      57.926075 [cm-1]
+     freq (   23) =       1.786896 [THz] =      59.604441 [cm-1]
+     freq (   24) =       1.932463 [THz] =      64.460033 [cm-1]
+     freq (   25) =       1.932463 [THz] =      64.460033 [cm-1]
+     freq (   26) =       1.936249 [THz] =      64.586312 [cm-1]
+     freq (   27) =       1.936249 [THz] =      64.586312 [cm-1]
+     freq (   28) =       1.986750 [THz] =      66.270855 [cm-1]
+     freq (   29) =       2.004008 [THz] =      66.846524 [cm-1]
+     freq (   30) =       2.095647 [THz] =      69.903251 [cm-1]
+     freq (   31) =       2.104148 [THz] =      70.186828 [cm-1]
+     freq (   32) =       2.104148 [THz] =      70.186828 [cm-1]
+     freq (   33) =       2.202493 [THz] =      73.467253 [cm-1]
+     freq (   34) =       2.202611 [THz] =      73.471187 [cm-1]
+     freq (   35) =       2.253246 [THz] =      75.160206 [cm-1]
+     freq (   36) =       2.253246 [THz] =      75.160206 [cm-1]
+     freq (   37) =       2.262829 [THz] =      75.479841 [cm-1]
+     freq (   38) =       2.278848 [THz] =      76.014182 [cm-1]
+     freq (   39) =       2.293120 [THz] =      76.490245 [cm-1]
+     freq (   40) =       2.293120 [THz] =      76.490245 [cm-1]
+     freq (   41) =       2.378087 [THz] =      79.324438 [cm-1]
+     freq (   42) =       2.378087 [THz] =      79.324438 [cm-1]
+     freq (   43) =       2.457509 [THz] =      81.973681 [cm-1]
+     freq (   44) =       2.573297 [THz] =      85.835947 [cm-1]
+     freq (   45) =       2.573297 [THz] =      85.835947 [cm-1]
+     freq (   46) =       2.679951 [THz] =      89.393550 [cm-1]
+     freq (   47) =       2.679951 [THz] =      89.393550 [cm-1]
+     freq (   48) =       2.847369 [THz] =      94.978002 [cm-1]
+     freq (   49) =       2.902706 [THz] =      96.823846 [cm-1]
+     freq (   50) =       2.922666 [THz] =      97.489656 [cm-1]
+     freq (   51) =       2.982106 [THz] =      99.472358 [cm-1]
+     freq (   52) =       3.001908 [THz] =     100.132871 [cm-1]
+     freq (   53) =       3.013764 [THz] =     100.528351 [cm-1]
+     freq (   54) =       3.013764 [THz] =     100.528351 [cm-1]
+     freq (   55) =       3.169890 [THz] =     105.736161 [cm-1]
+     freq (   56) =       3.196901 [THz] =     106.637123 [cm-1]
+     freq (   57) =       3.199036 [THz] =     106.708357 [cm-1]
+     freq (   58) =       3.470168 [THz] =     115.752331 [cm-1]
+     freq (   59) =       3.935696 [THz] =     131.280672 [cm-1]
+     freq (   60) =       3.946147 [THz] =     131.629296 [cm-1]
+     freq (   61) =       3.959130 [THz] =     132.062362 [cm-1]
+     freq (   62) =       3.959130 [THz] =     132.062362 [cm-1]
+     freq (   63) =       4.413715 [THz] =     147.225683 [cm-1]
+     freq (   64) =       4.413715 [THz] =     147.225683 [cm-1]
+     freq (   65) =       4.542507 [THz] =     151.521739 [cm-1]
+     freq (   66) =       4.542507 [THz] =     151.521739 [cm-1]
+     freq (   67) =       4.547046 [THz] =     151.673119 [cm-1]
+     freq (   68) =       4.574326 [THz] =     152.583089 [cm-1]
+     freq (   69) =       4.601657 [THz] =     153.494762 [cm-1]
+     freq (   70) =       4.601657 [THz] =     153.494762 [cm-1]
+     freq (   71) =       4.861874 [THz] =     162.174663 [cm-1]
+     freq (   72) =       4.870647 [THz] =     162.467280 [cm-1]
+     freq (   73) =       6.823734 [THz] =     227.615279 [cm-1]
+     freq (   74) =       7.484093 [THz] =     249.642460 [cm-1]
+     freq (   75) =       7.511907 [THz] =     250.570252 [cm-1]
+     freq (   76) =       7.595911 [THz] =     253.372319 [cm-1]
+     freq (   77) =       7.595911 [THz] =     253.372319 [cm-1]
+     freq (   78) =       7.658861 [THz] =     255.472115 [cm-1]
+     freq (   79) =       7.830525 [THz] =     261.198192 [cm-1]
+     freq (   80) =       7.830525 [THz] =     261.198192 [cm-1]
+     freq (   81) =       8.640814 [THz] =     288.226537 [cm-1]
+     freq (   82) =       8.640814 [THz] =     288.226537 [cm-1]
+     freq (   83) =       8.681608 [THz] =     289.587264 [cm-1]
+     freq (   84) =       8.681608 [THz] =     289.587264 [cm-1]
+     freq (   85) =       9.527885 [THz] =     317.816026 [cm-1]
+     freq (   86) =       9.527885 [THz] =     317.816026 [cm-1]
+     freq (   87) =       9.885062 [THz] =     329.730177 [cm-1]
+     freq (   88) =       9.925101 [THz] =     331.065736 [cm-1]
+     freq (   89) =      10.117355 [THz] =     337.478625 [cm-1]
+     freq (   90) =      10.117355 [THz] =     337.478625 [cm-1]
+     freq (   91) =      10.238798 [THz] =     341.529543 [cm-1]
+     freq (   92) =      10.353429 [THz] =     345.353206 [cm-1]
+     freq (   93) =      10.531804 [THz] =     351.303171 [cm-1]
+     freq (   94) =      10.569511 [THz] =     352.560926 [cm-1]
+     freq (   95) =      10.841951 [THz] =     361.648564 [cm-1]
+     freq (   96) =      10.873308 [THz] =     362.694514 [cm-1]
+     freq (   97) =      10.873308 [THz] =     362.694514 [cm-1]
+     freq (   98) =      10.953241 [THz] =     365.360789 [cm-1]
+     freq (   99) =      10.958321 [THz] =     365.530242 [cm-1]
+     freq (  100) =      10.958321 [THz] =     365.530242 [cm-1]
+     freq (  101) =      11.038382 [THz] =     368.200776 [cm-1]
+     freq (  102) =      11.198132 [THz] =     373.529468 [cm-1]
+     freq (  103) =      11.297380 [THz] =     376.840044 [cm-1]
+     freq (  104) =      11.573575 [THz] =     386.052911 [cm-1]
+     freq (  105) =      11.573575 [THz] =     386.052911 [cm-1]
+     freq (  106) =      11.693541 [THz] =     390.054532 [cm-1]
+     freq (  107) =      11.720083 [THz] =     390.939888 [cm-1]
+     freq (  108) =      11.911114 [THz] =     397.311992 [cm-1]
+     freq (  109) =      11.911114 [THz] =     397.311992 [cm-1]
+     freq (  110) =      12.175066 [THz] =     406.116477 [cm-1]
+     freq (  111) =      12.233029 [THz] =     408.049913 [cm-1]
+     freq (  112) =      12.614528 [THz] =     420.775361 [cm-1]
+     freq (  113) =      12.614528 [THz] =     420.775361 [cm-1]
+     freq (  114) =      12.645599 [THz] =     421.811773 [cm-1]
+     freq (  115) =      12.645599 [THz] =     421.811773 [cm-1]
+     freq (  116) =      13.341087 [THz] =     445.010748 [cm-1]
+     freq (  117) =      13.659176 [THz] =     455.621064 [cm-1]
+     freq (  118) =      14.120984 [THz] =     471.025311 [cm-1]
+     freq (  119) =      14.147563 [THz] =     471.911916 [cm-1]
+     freq (  120) =      14.763628 [THz] =     492.461622 [cm-1]
+ **************************************************************************
+
+     Mode symmetry, D_4h(4/mmm) point group:
+
+     freq (   1-   2) =        -56.7  [cm-1]   --> E_u  X_5' M_5'  I  
+     freq (   3-   4) =        -29.5  [cm-1]   --> E_g  X_5  M_5   R  
+     freq (   5-   5) =        -22.9  [cm-1]   --> A_2u X_4' M_4'  I  
+     freq (   6-   7) =         12.9  [cm-1]   --> E_u  X_5' M_5'  I  
+     freq (   8-   9) =         32.6  [cm-1]   --> E_u  X_5' M_5'  I  
+     freq (  10-  11) =         41.0  [cm-1]   --> E_g  X_5  M_5   R  
+     freq (  12-  12) =         41.6  [cm-1]   --> A_2u X_4' M_4'  I  
+     freq (  13-  13) =         44.8  [cm-1]   --> B_2u X_3' M_3'     
+     freq (  14-  14) =         46.1  [cm-1]   --> A_2u X_4' M_4'  I  
+     freq (  15-  16) =         49.2  [cm-1]   --> E_g  X_5  M_5   R  
+     freq (  17-  17) =         49.4  [cm-1]   --> A_1u X_1' M_1'     
+     freq (  18-  18) =         54.7  [cm-1]   --> B_1u X_2' M_2'     
+     freq (  19-  20) =         55.9  [cm-1]   --> E_u  X_5' M_5'  I  
+     freq (  21-  22) =         57.9  [cm-1]   --> E_u  X_5' M_5'  I  
+     freq (  23-  23) =         59.6  [cm-1]   --> A_2g X_4  M_4      
+     freq (  24-  25) =         64.5  [cm-1]   --> E_u  X_5' M_5'  I  
+     freq (  26-  27) =         64.6  [cm-1]   --> E_g  X_5  M_5   R  
+     freq (  28-  28) =         66.3  [cm-1]   --> B_2g X_3  M_3   R  
+     freq (  29-  29) =         66.8  [cm-1]   --> A_2u X_4' M_4'  I  
+     freq (  30-  30) =         69.9  [cm-1]   --> B_2u X_3' M_3'     
+     freq (  31-  32) =         70.2  [cm-1]   --> E_g  X_5  M_5   R  
+     freq (  33-  33) =         73.5  [cm-1]   --> A_2u X_4' M_4'  I  
+     freq (  34-  34) =         73.5  [cm-1]   --> B_1u X_2' M_2'     
+     freq (  35-  36) =         75.2  [cm-1]   --> E_u  X_5' M_5'  I  
+     freq (  37-  37) =         75.5  [cm-1]   --> A_1g X_1  M_1   R  
+     freq (  38-  38) =         76.0  [cm-1]   --> B_1g X_2  M_2   R  
+     freq (  39-  40) =         76.5  [cm-1]   --> E_g  X_5  M_5   R  
+     freq (  41-  42) =         79.3  [cm-1]   --> E_u  X_5' M_5'  I  
+     freq (  43-  43) =         82.0  [cm-1]   --> A_1g X_1  M_1   R  
+     freq (  44-  45) =         85.8  [cm-1]   --> E_u  X_5' M_5'  I  
+     freq (  46-  47) =         89.4  [cm-1]   --> E_u  X_5' M_5'  I  
+     freq (  48-  48) =         95.0  [cm-1]   --> B_1g X_2  M_2   R  
+     freq (  49-  49) =         96.8  [cm-1]   --> A_1g X_1  M_1   R  
+     freq (  50-  50) =         97.5  [cm-1]   --> B_2g X_3  M_3   R  
+     freq (  51-  51) =         99.5  [cm-1]   --> A_2g X_4  M_4      
+     freq (  52-  52) =        100.1  [cm-1]   --> A_2u X_4' M_4'  I  
+     freq (  53-  54) =        100.5  [cm-1]   --> E_u  X_5' M_5'  I  
+     freq (  55-  55) =        105.7  [cm-1]   --> B_2g X_3  M_3   R  
+     freq (  56-  56) =        106.6  [cm-1]   --> A_1g X_1  M_1   R  
+     freq (  57-  57) =        106.7  [cm-1]   --> B_1u X_2' M_2'     
+     freq (  58-  58) =        115.8  [cm-1]   --> A_2u X_4' M_4'  I  
+     freq (  59-  59) =        131.3  [cm-1]   --> B_2u X_3' M_3'     
+     freq (  60-  60) =        131.6  [cm-1]   --> A_2u X_4' M_4'  I  
+     freq (  61-  62) =        132.1  [cm-1]   --> E_g  X_5  M_5   R  
+     freq (  63-  64) =        147.2  [cm-1]   --> E_u  X_5' M_5'  I  
+     freq (  65-  66) =        151.5  [cm-1]   --> E_u  X_5' M_5'  I  
+     freq (  67-  67) =        151.7  [cm-1]   --> A_1g X_1  M_1   R  
+     freq (  68-  68) =        152.6  [cm-1]   --> B_1g X_2  M_2   R  
+     freq (  69-  70) =        153.5  [cm-1]   --> E_g  X_5  M_5   R  
+     freq (  71-  71) =        162.2  [cm-1]   --> A_2u X_4' M_4'  I  
+     freq (  72-  72) =        162.5  [cm-1]   --> A_1g X_1  M_1   R  
+     freq (  73-  73) =        227.6  [cm-1]   --> A_1u X_1' M_1'     
+     freq (  74-  74) =        249.6  [cm-1]   --> B_2u X_3' M_3'     
+     freq (  75-  75) =        250.6  [cm-1]   --> B_1g X_2  M_2   R  
+     freq (  76-  77) =        253.4  [cm-1]   --> E_u  X_5' M_5'  I  
+     freq (  78-  78) =        255.5  [cm-1]   --> A_2g X_4  M_4      
+     freq (  79-  80) =        261.2  [cm-1]   --> E_g  X_5  M_5   R  
+     freq (  81-  82) =        288.2  [cm-1]   --> E_u  X_5' M_5'  I  
+     freq (  83-  84) =        289.6  [cm-1]   --> E_g  X_5  M_5   R  
+     freq (  85-  86) =        317.8  [cm-1]   --> E_u  X_5' M_5'  I  
+     freq (  87-  87) =        329.7  [cm-1]   --> A_1g X_1  M_1   R  
+     freq (  88-  88) =        331.1  [cm-1]   --> B_1g X_2  M_2   R  
+     freq (  89-  90) =        337.5  [cm-1]   --> E_g  X_5  M_5   R  
+     freq (  91-  91) =        341.5  [cm-1]   --> A_2u X_4' M_4'  I  
+     freq (  92-  92) =        345.4  [cm-1]   --> B_2u X_3' M_3'     
+     freq (  93-  93) =        351.3  [cm-1]   --> B_2u X_3' M_3'     
+     freq (  94-  94) =        352.6  [cm-1]   --> B_1g X_2  M_2   R  
+     freq (  95-  95) =        361.6  [cm-1]   --> B_1u X_2' M_2'     
+     freq (  96-  97) =        362.7  [cm-1]   --> E_g  X_5  M_5   R  
+     freq (  98-  98) =        365.4  [cm-1]   --> B_2g X_3  M_3   R  
+     freq (  99- 100) =        365.5  [cm-1]   --> E_u  X_5' M_5'  I  
+     freq ( 101- 101) =        368.2  [cm-1]   --> A_1u X_1' M_1'     
+     freq ( 102- 102) =        373.5  [cm-1]   --> A_2u X_4' M_4'  I  
+     freq ( 103- 103) =        376.8  [cm-1]   --> A_2g X_4  M_4      
+     freq ( 104- 105) =        386.1  [cm-1]   --> E_u  X_5' M_5'  I  
+     freq ( 106- 106) =        390.1  [cm-1]   --> B_1g X_2  M_2   R  
+     freq ( 107- 107) =        390.9  [cm-1]   --> A_1g X_1  M_1   R  
+     freq ( 108- 109) =        397.3  [cm-1]   --> E_g  X_5  M_5   R  
+     freq ( 110- 110) =        406.1  [cm-1]   --> A_2u X_4' M_4'  I  
+     freq ( 111- 111) =        408.0  [cm-1]   --> B_2u X_3' M_3'     
+     freq ( 112- 113) =        420.8  [cm-1]   --> E_g  X_5  M_5   R  
+     freq ( 114- 115) =        421.8  [cm-1]   --> E_u  X_5' M_5'  I  
+     freq ( 116- 116) =        445.0  [cm-1]   --> B_1u X_2' M_2'     
+     freq ( 117- 117) =        455.6  [cm-1]   --> A_2u X_4' M_4'  I  
+     freq ( 118- 118) =        471.0  [cm-1]   --> B_2g X_3  M_3   R  
+     freq ( 119- 119) =        471.9  [cm-1]   --> A_1g X_1  M_1   R  
+     freq ( 120- 120) =        492.5  [cm-1]   --> A_1g X_1  M_1   R  
+ 
+     PHONON       :      9h51m CPU      9h59m WALL
+
+     INITIALIZATION: 
+     phq_setup    :      0.04s CPU      0.16s WALL (       1 calls)
+     phq_init     :      4.16s CPU      4.22s WALL (       1 calls)
+ 
+     phq_init     :      4.16s CPU      4.22s WALL (       1 calls)
+     set_drhoc    :      0.07s CPU      0.07s WALL (       1 calls)
+     init_vloc    :      0.02s CPU      0.02s WALL (       1 calls)
+     init_us_1    :      0.00s CPU      0.00s WALL (       1 calls)
+     init_us_2    :     33.34s CPU     34.20s WALL (    2840 calls)
+ 
+     DIELECTRIC CONSTANT AND EFFECTIVE CHARGES:
+ 
+     RAMAN COEFFICIENTS, THIRD-ORDER CHI:
+ 
+     DYNAMICAL MATRIX:
+     phqscf       :  35494.01s CPU  35969.08s WALL (       1 calls)
+     dynmatrix    :      0.15s CPU      0.62s WALL (       1 calls)
+ 
+     phqscf       :  35494.01s CPU  35969.08s WALL (       1 calls)
+     solve_linter :  35376.77s CPU  35848.89s WALL (      12 calls)
+     sth_kernel   :  34802.99s CPU  35242.94s WALL (     117 calls)
+     h_prec       :     20.32s CPU     20.47s WALL (    2340 calls)
+     apply_dpot_b :    724.40s CPU    738.60s WALL (    4240 calls)
+     ortho        :    177.39s CPU    178.07s WALL (    4680 calls)
+     cgsolve      :  31948.40s CPU  32277.84s WALL (    4680 calls)
+     incdrhoscf   :    737.58s CPU    750.26s WALL (    4680 calls)
+                                        0.00s GPU  (    4680 calls)
+     dv_of_drho   :      2.39s CPU      2.50s WALL (     234 calls)
+     mix_pot      :      4.83s CPU      7.72s WALL (     117 calls)
+     drhodv       :    116.94s CPU    119.27s WALL (      12 calls)
+     psymdvscf    :    210.13s CPU    216.12s WALL (     117 calls)
+ 
+     dvqpsi_us    :    327.70s CPU    330.36s WALL (     480 calls)
+                                        0.00s GPU  (     480 calls)
+     dvqpsi_us_on :    244.50s CPU    245.64s WALL (     480 calls)
+ 
+     add_vuspsi   :   4157.28s CPU   4176.09s WALL (  172476 calls)
+ 
+ 
+      General routines
+     calbec       :   8144.25s CPU   8164.50s WALL (  346952 calls)
+     fft          :      8.69s CPU      8.94s WALL (    4315 calls)
+     ffts         :     12.56s CPU     12.72s WALL (    2391 calls)
+     fftw         :  11923.97s CPU  12107.97s WALL (42266650 calls)
+     davcio       :      3.12s CPU    101.86s WALL (   18432 calls)
+     write_rec    :      0.96s CPU      4.73s WALL (     129 calls)
+ 
+      Additional routines
+     ch_psi       :  30520.17s CPU  30839.53s WALL (  172476 calls)
+     last         :   8081.98s CPU   8110.79s WALL (  172476 calls)
+     Hesh         :    281.78s CPU    284.13s WALL (  172476 calls)
+     ch_psi_all_k :   7793.37s CPU   7816.48s WALL (  172476 calls)
+                                        0.00s GPU  (  172476 calls)
+     ch_psi_calbe :   4025.07s CPU   4033.57s WALL (  172476 calls)
+                                        0.00s GPU  (  172476 calls)
+     h_psi_bgrp   :  21763.74s CPU  21999.80s WALL (  172476 calls)
+     h_psi        :  21762.50s CPU  21999.11s WALL (  172476 calls)
+     h_psi:pot    :  21509.52s CPU  21743.97s WALL (  172476 calls)
+     h_psi:calbec :   4024.85s CPU   4034.57s WALL (  172476 calls)
+     s_psi_bgrp   :    429.89s CPU    434.73s WALL (  349632 calls)
+ 
+ 
+     PHONON       :      9h51m CPU      9h59m WALL
+
+ 
+   This run was terminated on:   1:27:53  25Aug2026            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

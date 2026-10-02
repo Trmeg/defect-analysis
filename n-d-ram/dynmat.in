@@ -1,0 +1,4 @@
+&INPUT
+  fildyn = 'om.dmat',
+  asr    = 'crystal'
+/
